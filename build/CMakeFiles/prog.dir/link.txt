@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -Wextra -Weffc++ -g -fsanitize=address CMakeFiles/prog.dir/src/Config.cpp.o CMakeFiles/prog.dir/src/main.cpp.o -o prog   -L/usr/local/lib  -Wl,-rpath,/usr/local/lib -lmysqlcppconn -lspdlog /usr/lib/x86_64-linux-gnu/libssl.so /usr/lib/x86_64-linux-gnu/libcrypto.so 
