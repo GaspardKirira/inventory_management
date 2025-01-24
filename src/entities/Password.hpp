@@ -4,35 +4,39 @@
 #include <string>
 #include "PasswordValidator.hpp"
 
-class Password
+namespace Softadastra
 {
-public:
-    // Constructeur : hache le mot de passe lors de la création de l'objet
-    explicit Password(const std::string &password)
+    class Password
     {
-        // On hache le mot de passe à la création de l'objet
-        m_password_hash = PasswordValidator::hashPassword(password);
-    }
+    public:
+        // Constructeur par défaut
+        Password() = default;
 
-    // Méthode pour récupérer le hachage du mot de passe
-    const std::string &getPasswordHash() const { return m_password_hash; }
-
-    // Méthode pour valider un mot de passe en comparant avec le hachage
-    void validatePassword(const std::string &password) const
-    {
-        try
+        // Constructeur avec le mot de passe
+        explicit Password(const std::string &password)
+            : m_password_hash(Softadastra::PasswordValidator::hashPassword(password))
         {
-            PasswordValidator::validatePassword(password, m_password_hash); // Utilisation du validateur
         }
-        catch (const std::invalid_argument &e)
-        {
-            // Si le mot de passe est invalide, on peut relancer l'exception ou gérer autrement
-            throw std::invalid_argument("Password validation failed: " + std::string(e.what()));
-        }
-    }
 
-private:
-    std::string m_password_hash; // Hachage du mot de passe
-};
+        // Getter pour le hash du mot de passe
+        const std::string &getPasswordHash() const { return m_password_hash; }
+
+        // Méthode pour valider un mot de passe donné
+        void validatePassword(const std::string &password) const
+        {
+            try
+            {
+                Softadastra::PasswordValidator::validatePassword(password, m_password_hash);
+            }
+            catch (const std::invalid_argument &e)
+            {
+                throw std::invalid_argument("Password validation failed: " + std::string(e.what()));
+            }
+        }
+
+    private:
+        std::string m_password_hash{};
+    };
+} // namespace Softadastra
 
 #endif // PASSWORD_HPP

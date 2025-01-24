@@ -2,18 +2,21 @@
 #include <iostream>
 #include <memory>
 
+using namespace Softadastra;
+
 int main()
 {
     try
     {
         // Création des objets validés pour un utilisateur complet
         auto emailComplete = std::make_shared<Email>("john.doe@example.com");
-        auto phoneComplete = std::make_shared<Phone>("123-456-7890");
-        auto companyComplete = std::make_shared<Company>("TechCorpsofftadastrakiriragaspard");
-        auto locationComplete = std::make_shared<Location>(1, 2, 3); // Exemple : Country, Currency, Language
+        auto phoneComplete = std::make_shared<Phone>("1234567890");
+        auto companyComplete = std::make_shared<Company>("Tech corps");
+        auto locationComplete = std::make_shared<Location>(1, 2, 3);
+        auto password = std::make_shared<Password>("gaspard");
 
         // Création d'un utilisateur COMPLET avec toutes les informations
-        User userComplete("John Doe", companyComplete, emailComplete, phoneComplete, locationComplete);
+        User userComplete("John Doe", companyComplete, emailComplete, phoneComplete, password, locationComplete);
 
         std::cout << "--- User Complete ---" << std::endl;
         userComplete.displayInfo();

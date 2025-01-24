@@ -3,36 +3,24 @@
 
 #include <string>
 #include <stdexcept>
+#include "CompanyValidator.hpp"
 
-class CompanyValidator
+namespace Softadastra
 {
-public:
-    static void validateName(const std::string &company_name)
+    class Company
     {
-        if (company_name.empty())
+    public:
+        explicit Company(const std::string &company_name = "No Company")
+            : m_company_name(company_name)
         {
-            throw std::invalid_argument("Company name cannot be empty");
+            Softadastra::CompanyValidator::validateName(company_name);
         }
-        if (company_name.size() > 10)
-        {
-            throw std::invalid_argument("Company name is too long");
-        }
-    }
-};
 
-class Company
-{
-public:
-    explicit Company(const std::string &company_name = "No Company")
-        : m_company_name(company_name)
-    {
-        CompanyValidator::validateName(company_name);
-    }
+        const std::string &getCompanyName() const { return m_company_name; }
 
-    const std::string &getCompanyName() const { return m_company_name; }
-
-private:
-    std::string m_company_name;
-};
+    private:
+        std::string m_company_name;
+    };
+} // namespace Softadastra
 
 #endif // COMPANY_HPP

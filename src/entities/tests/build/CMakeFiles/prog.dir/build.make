@@ -93,7 +93,8 @@ prog_EXTERNAL_OBJECTS =
 prog: CMakeFiles/prog.dir/test_main.cpp.o
 prog: CMakeFiles/prog.dir/build.make
 prog: /usr/local/lib/libgtest.a
-prog: /usr/local/lib/libgtest_main.a
+prog: /usr/local/lib/libbenchmark.a
+prog: /usr/local/lib/libbenchmark_main.a
 prog: CMakeFiles/prog.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/softadastra/Documents/cpp/softadastra/src/entities/tests/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable prog"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/prog.dir/link.txt --verbose=$(VERBOSE)

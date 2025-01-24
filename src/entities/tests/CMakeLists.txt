@@ -6,14 +6,21 @@ project(MyProject)
 # Spécifie la version de C++ à utiliser
 set(CMAKE_CXX_STANDARD 20)
 
-# Ajoute les répertoires contenant les fichiers d'en-tête
-include_directories(/usr/local/include)
+# Recherche Google Test et Google Benchmark
+find_package(GTest REQUIRED)
+find_package(benchmark REQUIRED)
+
+# Si find_package échoue, spécifie manuellement le répertoire d'inclusion et de bibliothèque
+include_directories(${GTEST_INCLUDE_DIRS} ${BENCHMARK_INCLUDE_DIRS})
+
+# Ajoute un chemin explicite pour les bibliothèques de Google Benchmark
+link_directories(/usr/local/lib)
 
 # Ajoute l'exécutable à générer
 add_executable(prog test_main.cpp)
 
-# Ajouter les bibliothèques nécessaires
-target_link_libraries(prog /usr/local/lib/libgtest.a /usr/local/lib/libgtest_main.a pthread)
+# Lier explicitement les bibliothèques de Google Test et Google Benchmark
+target_link_libraries(prog ${GTEST_LIBRARIES} /usr/local/lib/libbenchmark.a /usr/local/lib/libbenchmark_main.a pthread)
 
 # Ajouter des flags de compilation
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra -Weffc++ -g -fsanitize=address")

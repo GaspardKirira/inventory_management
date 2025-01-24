@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/prog.dir/User.cpp.o"
+  "CMakeFiles/prog.dir/User.cpp.o.d"
   "CMakeFiles/prog.dir/main.cpp.o"
   "CMakeFiles/prog.dir/main.cpp.o.d"
   "prog"

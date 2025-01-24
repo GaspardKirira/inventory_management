@@ -1,1 +1,1 @@
-/usr/bin/c++  -Wall -Wextra -Weffc++ -g -fsanitize=address  -fsanitize=address CMakeFiles/prog.dir/test_main.cpp.o -o prog  /usr/local/lib/libgtest.a /usr/local/lib/libgtest_main.a -lpthread 
+/usr/bin/c++  -Wall -Wextra -Weffc++ -g -fsanitize=address  -fsanitize=address CMakeFiles/prog.dir/test_main.cpp.o -o prog   -L/usr/local/lib  -Wl,-rpath,/usr/local/lib /usr/local/lib/libgtest.a /usr/local/lib/libbenchmark.a /usr/local/lib/libbenchmark_main.a -lpthread 

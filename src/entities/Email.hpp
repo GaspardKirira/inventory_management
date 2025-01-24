@@ -4,33 +4,23 @@
 #include <string>
 #include <regex>
 #include <stdexcept>
+#include "EmailValidator.hpp"
 
-class EmailValidator
+namespace Softadastra
 {
-public:
-    static void validateEmail(const std::string &email)
+    class Email
     {
-        std::regex email_regex(R"((\w+)(\.[\w]+)*@(\w+)(\.[a-zA-Z]{2,3})+)");
-
-        if (!std::regex_match(email, email_regex))
+    public:
+        explicit Email(const std::string &email) : m_email(email)
         {
-            throw std::invalid_argument("Invalid email format");
+            Softadastra::EmailValidator::validateEmail(email);
         }
-    }
-};
 
-class Email
-{
-public:
-    explicit Email(const std::string &email) : m_email(email)
-    {
-        EmailValidator::validateEmail(email);
-    }
+        const std::string &getEmail() const { return m_email; }
 
-    const std::string &getEmail() const { return m_email; }
-
-private:
-    std::string m_email;
-};
+    private:
+        std::string m_email{};
+    };
+} // namespace Softadastra
 
 #endif // EMAIL_HPP
