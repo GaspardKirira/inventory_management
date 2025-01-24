@@ -36,8 +36,12 @@ find_package(OpenSSL REQUIRED)
 # Ajouter le répertoire d'inclusion de OpenSSL
 include_directories(${OPENSSL_INCLUDE_DIR})
 
-# Ajouter tous les fichiers .cpp dans le répertoire src et tous ses sous-dossiers
-file(GLOB_RECURSE SOURCE_FILES src/*.cpp)
+# Ajouter le répertoire src/config où se trouvent Config.hpp et Config.cpp
+include_directories(${CMAKE_SOURCE_DIR}/src/config)
+
+# Ajouter tous les fichiers .cpp dans src et src/config
+# Assure-toi que Config.cpp est bien inclus
+file(GLOB_RECURSE SOURCE_FILES src/*.cpp src/config/*.cpp)
 
 # Ajouter l'exécutable et spécifier les fichiers sources
 add_executable(prog ${SOURCE_FILES})

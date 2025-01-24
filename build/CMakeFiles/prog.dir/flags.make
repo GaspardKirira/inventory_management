@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/usr/include/mysql -I/usr/local/include/spdlog
+CXX_INCLUDES = -I/usr/include/mysql -I/usr/local/include/spdlog -I/home/softadastra/Documents/cpp/softadastra/src/config
 
 CXX_FLAGS =  -Wall -Wextra -Weffc++ -g -fsanitize=address -std=gnu++17
 

@@ -129,29 +129,173 @@ prog/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/prog.dir/build.make CMakeFiles/prog.dir/build
 .PHONY : prog/fast
 
-src/Config.o: src/Config.cpp.o
-.PHONY : src/Config.o
+src/config/Config.o: src/config/Config.cpp.o
+.PHONY : src/config/Config.o
 
 # target to build an object file
-src/Config.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/prog.dir/build.make CMakeFiles/prog.dir/src/Config.cpp.o
-.PHONY : src/Config.cpp.o
+src/config/Config.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/prog.dir/build.make CMakeFiles/prog.dir/src/config/Config.cpp.o
+.PHONY : src/config/Config.cpp.o
 
-src/Config.i: src/Config.cpp.i
-.PHONY : src/Config.i
+src/config/Config.i: src/config/Config.cpp.i
+.PHONY : src/config/Config.i
 
 # target to preprocess a source file
-src/Config.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/prog.dir/build.make CMakeFiles/prog.dir/src/Config.cpp.i
-.PHONY : src/Config.cpp.i
+src/config/Config.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/prog.dir/build.make CMakeFiles/prog.dir/src/config/Config.cpp.i
+.PHONY : src/config/Config.cpp.i
 
-src/Config.s: src/Config.cpp.s
-.PHONY : src/Config.s
+src/config/Config.s: src/config/Config.cpp.s
+.PHONY : src/config/Config.s
 
 # target to generate assembly for a file
-src/Config.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/prog.dir/build.make CMakeFiles/prog.dir/src/Config.cpp.s
-.PHONY : src/Config.cpp.s
+src/config/Config.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/prog.dir/build.make CMakeFiles/prog.dir/src/config/Config.cpp.s
+.PHONY : src/config/Config.cpp.s
+
+src/kernel/DynamicRequestHandler.o: src/kernel/DynamicRequestHandler.cpp.o
+.PHONY : src/kernel/DynamicRequestHandler.o
+
+# target to build an object file
+src/kernel/DynamicRequestHandler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/prog.dir/build.make CMakeFiles/prog.dir/src/kernel/DynamicRequestHandler.cpp.o
+.PHONY : src/kernel/DynamicRequestHandler.cpp.o
+
+src/kernel/DynamicRequestHandler.i: src/kernel/DynamicRequestHandler.cpp.i
+.PHONY : src/kernel/DynamicRequestHandler.i
+
+# target to preprocess a source file
+src/kernel/DynamicRequestHandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/prog.dir/build.make CMakeFiles/prog.dir/src/kernel/DynamicRequestHandler.cpp.i
+.PHONY : src/kernel/DynamicRequestHandler.cpp.i
+
+src/kernel/DynamicRequestHandler.s: src/kernel/DynamicRequestHandler.cpp.s
+.PHONY : src/kernel/DynamicRequestHandler.s
+
+# target to generate assembly for a file
+src/kernel/DynamicRequestHandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/prog.dir/build.make CMakeFiles/prog.dir/src/kernel/DynamicRequestHandler.cpp.s
+.PHONY : src/kernel/DynamicRequestHandler.cpp.s
+
+src/kernel/HTTPServer.o: src/kernel/HTTPServer.cpp.o
+.PHONY : src/kernel/HTTPServer.o
+
+# target to build an object file
+src/kernel/HTTPServer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/prog.dir/build.make CMakeFiles/prog.dir/src/kernel/HTTPServer.cpp.o
+.PHONY : src/kernel/HTTPServer.cpp.o
+
+src/kernel/HTTPServer.i: src/kernel/HTTPServer.cpp.i
+.PHONY : src/kernel/HTTPServer.i
+
+# target to preprocess a source file
+src/kernel/HTTPServer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/prog.dir/build.make CMakeFiles/prog.dir/src/kernel/HTTPServer.cpp.i
+.PHONY : src/kernel/HTTPServer.cpp.i
+
+src/kernel/HTTPServer.s: src/kernel/HTTPServer.cpp.s
+.PHONY : src/kernel/HTTPServer.s
+
+# target to generate assembly for a file
+src/kernel/HTTPServer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/prog.dir/build.make CMakeFiles/prog.dir/src/kernel/HTTPServer.cpp.s
+.PHONY : src/kernel/HTTPServer.cpp.s
+
+src/kernel/ResponseSender.o: src/kernel/ResponseSender.cpp.o
+.PHONY : src/kernel/ResponseSender.o
+
+# target to build an object file
+src/kernel/ResponseSender.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/prog.dir/build.make CMakeFiles/prog.dir/src/kernel/ResponseSender.cpp.o
+.PHONY : src/kernel/ResponseSender.cpp.o
+
+src/kernel/ResponseSender.i: src/kernel/ResponseSender.cpp.i
+.PHONY : src/kernel/ResponseSender.i
+
+# target to preprocess a source file
+src/kernel/ResponseSender.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/prog.dir/build.make CMakeFiles/prog.dir/src/kernel/ResponseSender.cpp.i
+.PHONY : src/kernel/ResponseSender.cpp.i
+
+src/kernel/ResponseSender.s: src/kernel/ResponseSender.cpp.s
+.PHONY : src/kernel/ResponseSender.s
+
+# target to generate assembly for a file
+src/kernel/ResponseSender.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/prog.dir/build.make CMakeFiles/prog.dir/src/kernel/ResponseSender.cpp.s
+.PHONY : src/kernel/ResponseSender.cpp.s
+
+src/kernel/Router.o: src/kernel/Router.cpp.o
+.PHONY : src/kernel/Router.o
+
+# target to build an object file
+src/kernel/Router.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/prog.dir/build.make CMakeFiles/prog.dir/src/kernel/Router.cpp.o
+.PHONY : src/kernel/Router.cpp.o
+
+src/kernel/Router.i: src/kernel/Router.cpp.i
+.PHONY : src/kernel/Router.i
+
+# target to preprocess a source file
+src/kernel/Router.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/prog.dir/build.make CMakeFiles/prog.dir/src/kernel/Router.cpp.i
+.PHONY : src/kernel/Router.cpp.i
+
+src/kernel/Router.s: src/kernel/Router.cpp.s
+.PHONY : src/kernel/Router.s
+
+# target to generate assembly for a file
+src/kernel/Router.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/prog.dir/build.make CMakeFiles/prog.dir/src/kernel/Router.cpp.s
+.PHONY : src/kernel/Router.cpp.s
+
+src/kernel/Session.o: src/kernel/Session.cpp.o
+.PHONY : src/kernel/Session.o
+
+# target to build an object file
+src/kernel/Session.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/prog.dir/build.make CMakeFiles/prog.dir/src/kernel/Session.cpp.o
+.PHONY : src/kernel/Session.cpp.o
+
+src/kernel/Session.i: src/kernel/Session.cpp.i
+.PHONY : src/kernel/Session.i
+
+# target to preprocess a source file
+src/kernel/Session.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/prog.dir/build.make CMakeFiles/prog.dir/src/kernel/Session.cpp.i
+.PHONY : src/kernel/Session.cpp.i
+
+src/kernel/Session.s: src/kernel/Session.cpp.s
+.PHONY : src/kernel/Session.s
+
+# target to generate assembly for a file
+src/kernel/Session.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/prog.dir/build.make CMakeFiles/prog.dir/src/kernel/Session.cpp.s
+.PHONY : src/kernel/Session.cpp.s
+
+src/kernel/SimpleRequestHandler.o: src/kernel/SimpleRequestHandler.cpp.o
+.PHONY : src/kernel/SimpleRequestHandler.o
+
+# target to build an object file
+src/kernel/SimpleRequestHandler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/prog.dir/build.make CMakeFiles/prog.dir/src/kernel/SimpleRequestHandler.cpp.o
+.PHONY : src/kernel/SimpleRequestHandler.cpp.o
+
+src/kernel/SimpleRequestHandler.i: src/kernel/SimpleRequestHandler.cpp.i
+.PHONY : src/kernel/SimpleRequestHandler.i
+
+# target to preprocess a source file
+src/kernel/SimpleRequestHandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/prog.dir/build.make CMakeFiles/prog.dir/src/kernel/SimpleRequestHandler.cpp.i
+.PHONY : src/kernel/SimpleRequestHandler.cpp.i
+
+src/kernel/SimpleRequestHandler.s: src/kernel/SimpleRequestHandler.cpp.s
+.PHONY : src/kernel/SimpleRequestHandler.s
+
+# target to generate assembly for a file
+src/kernel/SimpleRequestHandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/prog.dir/build.make CMakeFiles/prog.dir/src/kernel/SimpleRequestHandler.cpp.s
+.PHONY : src/kernel/SimpleRequestHandler.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -186,9 +330,27 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... prog"
-	@echo "... src/Config.o"
-	@echo "... src/Config.i"
-	@echo "... src/Config.s"
+	@echo "... src/config/Config.o"
+	@echo "... src/config/Config.i"
+	@echo "... src/config/Config.s"
+	@echo "... src/kernel/DynamicRequestHandler.o"
+	@echo "... src/kernel/DynamicRequestHandler.i"
+	@echo "... src/kernel/DynamicRequestHandler.s"
+	@echo "... src/kernel/HTTPServer.o"
+	@echo "... src/kernel/HTTPServer.i"
+	@echo "... src/kernel/HTTPServer.s"
+	@echo "... src/kernel/ResponseSender.o"
+	@echo "... src/kernel/ResponseSender.i"
+	@echo "... src/kernel/ResponseSender.s"
+	@echo "... src/kernel/Router.o"
+	@echo "... src/kernel/Router.i"
+	@echo "... src/kernel/Router.s"
+	@echo "... src/kernel/Session.o"
+	@echo "... src/kernel/Session.i"
+	@echo "... src/kernel/Session.s"
+	@echo "... src/kernel/SimpleRequestHandler.o"
+	@echo "... src/kernel/SimpleRequestHandler.i"
+	@echo "... src/kernel/SimpleRequestHandler.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
