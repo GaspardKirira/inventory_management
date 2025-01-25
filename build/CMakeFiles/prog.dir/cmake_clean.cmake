@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/prog.dir/src/kernel/HTTPServer.cpp.o.d"
   "CMakeFiles/prog.dir/src/kernel/ResponseSender.cpp.o"
   "CMakeFiles/prog.dir/src/kernel/ResponseSender.cpp.o.d"
+  "CMakeFiles/prog.dir/src/kernel/RouteConfigurator.cpp.o"
+  "CMakeFiles/prog.dir/src/kernel/RouteConfigurator.cpp.o.d"
   "CMakeFiles/prog.dir/src/kernel/Router.cpp.o"
   "CMakeFiles/prog.dir/src/kernel/Router.cpp.o.d"
   "CMakeFiles/prog.dir/src/kernel/Session.cpp.o"

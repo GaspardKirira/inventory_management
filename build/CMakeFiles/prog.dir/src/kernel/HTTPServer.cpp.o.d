@@ -1729,4 +1729,5 @@ CMakeFiles/prog.dir/src/kernel/HTTPServer.cpp.o: \
  /home/softadastra/Documents/cpp/softadastra/src/kernel/Router.hpp \
  /home/softadastra/Documents/cpp/softadastra/src/config/Config.hpp \
  /home/softadastra/Documents/cpp/softadastra/src/kernel/Session.hpp \
- /home/softadastra/Documents/cpp/softadastra/src/kernel/ResponseSender.hpp
+ /home/softadastra/Documents/cpp/softadastra/src/kernel/ResponseSender.hpp \
+ /home/softadastra/Documents/cpp/softadastra/src/kernel/RouteConfigurator.hpp

@@ -12,6 +12,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/softadastra/Documents/cpp/softadastra/src/kernel/DynamicRequestHandler.cpp" "CMakeFiles/prog.dir/src/kernel/DynamicRequestHandler.cpp.o" "gcc" "CMakeFiles/prog.dir/src/kernel/DynamicRequestHandler.cpp.o.d"
   "/home/softadastra/Documents/cpp/softadastra/src/kernel/HTTPServer.cpp" "CMakeFiles/prog.dir/src/kernel/HTTPServer.cpp.o" "gcc" "CMakeFiles/prog.dir/src/kernel/HTTPServer.cpp.o.d"
   "/home/softadastra/Documents/cpp/softadastra/src/kernel/ResponseSender.cpp" "CMakeFiles/prog.dir/src/kernel/ResponseSender.cpp.o" "gcc" "CMakeFiles/prog.dir/src/kernel/ResponseSender.cpp.o.d"
+  "/home/softadastra/Documents/cpp/softadastra/src/kernel/RouteConfigurator.cpp" "CMakeFiles/prog.dir/src/kernel/RouteConfigurator.cpp.o" "gcc" "CMakeFiles/prog.dir/src/kernel/RouteConfigurator.cpp.o.d"
   "/home/softadastra/Documents/cpp/softadastra/src/kernel/Router.cpp" "CMakeFiles/prog.dir/src/kernel/Router.cpp.o" "gcc" "CMakeFiles/prog.dir/src/kernel/Router.cpp.o.d"
   "/home/softadastra/Documents/cpp/softadastra/src/kernel/Session.cpp" "CMakeFiles/prog.dir/src/kernel/Session.cpp.o" "gcc" "CMakeFiles/prog.dir/src/kernel/Session.cpp.o.d"
   "/home/softadastra/Documents/cpp/softadastra/src/kernel/SimpleRequestHandler.cpp" "CMakeFiles/prog.dir/src/kernel/SimpleRequestHandler.cpp.o" "gcc" "CMakeFiles/prog.dir/src/kernel/SimpleRequestHandler.cpp.o.d"

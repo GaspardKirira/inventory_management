@@ -225,6 +225,30 @@ src/kernel/ResponseSender.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/prog.dir/build.make CMakeFiles/prog.dir/src/kernel/ResponseSender.cpp.s
 .PHONY : src/kernel/ResponseSender.cpp.s
 
+src/kernel/RouteConfigurator.o: src/kernel/RouteConfigurator.cpp.o
+.PHONY : src/kernel/RouteConfigurator.o
+
+# target to build an object file
+src/kernel/RouteConfigurator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/prog.dir/build.make CMakeFiles/prog.dir/src/kernel/RouteConfigurator.cpp.o
+.PHONY : src/kernel/RouteConfigurator.cpp.o
+
+src/kernel/RouteConfigurator.i: src/kernel/RouteConfigurator.cpp.i
+.PHONY : src/kernel/RouteConfigurator.i
+
+# target to preprocess a source file
+src/kernel/RouteConfigurator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/prog.dir/build.make CMakeFiles/prog.dir/src/kernel/RouteConfigurator.cpp.i
+.PHONY : src/kernel/RouteConfigurator.cpp.i
+
+src/kernel/RouteConfigurator.s: src/kernel/RouteConfigurator.cpp.s
+.PHONY : src/kernel/RouteConfigurator.s
+
+# target to generate assembly for a file
+src/kernel/RouteConfigurator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/prog.dir/build.make CMakeFiles/prog.dir/src/kernel/RouteConfigurator.cpp.s
+.PHONY : src/kernel/RouteConfigurator.cpp.s
+
 src/kernel/Router.o: src/kernel/Router.cpp.o
 .PHONY : src/kernel/Router.o
 
@@ -342,6 +366,9 @@ help:
 	@echo "... src/kernel/ResponseSender.o"
 	@echo "... src/kernel/ResponseSender.i"
 	@echo "... src/kernel/ResponseSender.s"
+	@echo "... src/kernel/RouteConfigurator.o"
+	@echo "... src/kernel/RouteConfigurator.i"
+	@echo "... src/kernel/RouteConfigurator.s"
 	@echo "... src/kernel/Router.o"
 	@echo "... src/kernel/Router.i"
 	@echo "... src/kernel/Router.s"

@@ -125,10 +125,24 @@ CMakeFiles/prog.dir/src/kernel/ResponseSender.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/prog.dir/src/kernel/ResponseSender.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/softadastra/Documents/cpp/softadastra/src/kernel/ResponseSender.cpp -o CMakeFiles/prog.dir/src/kernel/ResponseSender.cpp.s
 
+CMakeFiles/prog.dir/src/kernel/RouteConfigurator.cpp.o: CMakeFiles/prog.dir/flags.make
+CMakeFiles/prog.dir/src/kernel/RouteConfigurator.cpp.o: /home/softadastra/Documents/cpp/softadastra/src/kernel/RouteConfigurator.cpp
+CMakeFiles/prog.dir/src/kernel/RouteConfigurator.cpp.o: CMakeFiles/prog.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/softadastra/Documents/cpp/softadastra/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/prog.dir/src/kernel/RouteConfigurator.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/prog.dir/src/kernel/RouteConfigurator.cpp.o -MF CMakeFiles/prog.dir/src/kernel/RouteConfigurator.cpp.o.d -o CMakeFiles/prog.dir/src/kernel/RouteConfigurator.cpp.o -c /home/softadastra/Documents/cpp/softadastra/src/kernel/RouteConfigurator.cpp
+
+CMakeFiles/prog.dir/src/kernel/RouteConfigurator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/prog.dir/src/kernel/RouteConfigurator.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/softadastra/Documents/cpp/softadastra/src/kernel/RouteConfigurator.cpp > CMakeFiles/prog.dir/src/kernel/RouteConfigurator.cpp.i
+
+CMakeFiles/prog.dir/src/kernel/RouteConfigurator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/prog.dir/src/kernel/RouteConfigurator.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/softadastra/Documents/cpp/softadastra/src/kernel/RouteConfigurator.cpp -o CMakeFiles/prog.dir/src/kernel/RouteConfigurator.cpp.s
+
 CMakeFiles/prog.dir/src/kernel/Router.cpp.o: CMakeFiles/prog.dir/flags.make
 CMakeFiles/prog.dir/src/kernel/Router.cpp.o: /home/softadastra/Documents/cpp/softadastra/src/kernel/Router.cpp
 CMakeFiles/prog.dir/src/kernel/Router.cpp.o: CMakeFiles/prog.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/softadastra/Documents/cpp/softadastra/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/prog.dir/src/kernel/Router.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/softadastra/Documents/cpp/softadastra/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/prog.dir/src/kernel/Router.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/prog.dir/src/kernel/Router.cpp.o -MF CMakeFiles/prog.dir/src/kernel/Router.cpp.o.d -o CMakeFiles/prog.dir/src/kernel/Router.cpp.o -c /home/softadastra/Documents/cpp/softadastra/src/kernel/Router.cpp
 
 CMakeFiles/prog.dir/src/kernel/Router.cpp.i: cmake_force
@@ -142,7 +156,7 @@ CMakeFiles/prog.dir/src/kernel/Router.cpp.s: cmake_force
 CMakeFiles/prog.dir/src/kernel/Session.cpp.o: CMakeFiles/prog.dir/flags.make
 CMakeFiles/prog.dir/src/kernel/Session.cpp.o: /home/softadastra/Documents/cpp/softadastra/src/kernel/Session.cpp
 CMakeFiles/prog.dir/src/kernel/Session.cpp.o: CMakeFiles/prog.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/softadastra/Documents/cpp/softadastra/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/prog.dir/src/kernel/Session.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/softadastra/Documents/cpp/softadastra/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/prog.dir/src/kernel/Session.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/prog.dir/src/kernel/Session.cpp.o -MF CMakeFiles/prog.dir/src/kernel/Session.cpp.o.d -o CMakeFiles/prog.dir/src/kernel/Session.cpp.o -c /home/softadastra/Documents/cpp/softadastra/src/kernel/Session.cpp
 
 CMakeFiles/prog.dir/src/kernel/Session.cpp.i: cmake_force
@@ -156,7 +170,7 @@ CMakeFiles/prog.dir/src/kernel/Session.cpp.s: cmake_force
 CMakeFiles/prog.dir/src/kernel/SimpleRequestHandler.cpp.o: CMakeFiles/prog.dir/flags.make
 CMakeFiles/prog.dir/src/kernel/SimpleRequestHandler.cpp.o: /home/softadastra/Documents/cpp/softadastra/src/kernel/SimpleRequestHandler.cpp
 CMakeFiles/prog.dir/src/kernel/SimpleRequestHandler.cpp.o: CMakeFiles/prog.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/softadastra/Documents/cpp/softadastra/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/prog.dir/src/kernel/SimpleRequestHandler.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/softadastra/Documents/cpp/softadastra/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/prog.dir/src/kernel/SimpleRequestHandler.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/prog.dir/src/kernel/SimpleRequestHandler.cpp.o -MF CMakeFiles/prog.dir/src/kernel/SimpleRequestHandler.cpp.o.d -o CMakeFiles/prog.dir/src/kernel/SimpleRequestHandler.cpp.o -c /home/softadastra/Documents/cpp/softadastra/src/kernel/SimpleRequestHandler.cpp
 
 CMakeFiles/prog.dir/src/kernel/SimpleRequestHandler.cpp.i: cmake_force
@@ -170,7 +184,7 @@ CMakeFiles/prog.dir/src/kernel/SimpleRequestHandler.cpp.s: cmake_force
 CMakeFiles/prog.dir/src/main.cpp.o: CMakeFiles/prog.dir/flags.make
 CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/src/main.cpp
 CMakeFiles/prog.dir/src/main.cpp.o: CMakeFiles/prog.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/softadastra/Documents/cpp/softadastra/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/prog.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/softadastra/Documents/cpp/softadastra/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/prog.dir/src/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/prog.dir/src/main.cpp.o -MF CMakeFiles/prog.dir/src/main.cpp.o.d -o CMakeFiles/prog.dir/src/main.cpp.o -c /home/softadastra/Documents/cpp/softadastra/src/main.cpp
 
 CMakeFiles/prog.dir/src/main.cpp.i: cmake_force
@@ -187,6 +201,7 @@ prog_OBJECTS = \
 "CMakeFiles/prog.dir/src/kernel/DynamicRequestHandler.cpp.o" \
 "CMakeFiles/prog.dir/src/kernel/HTTPServer.cpp.o" \
 "CMakeFiles/prog.dir/src/kernel/ResponseSender.cpp.o" \
+"CMakeFiles/prog.dir/src/kernel/RouteConfigurator.cpp.o" \
 "CMakeFiles/prog.dir/src/kernel/Router.cpp.o" \
 "CMakeFiles/prog.dir/src/kernel/Session.cpp.o" \
 "CMakeFiles/prog.dir/src/kernel/SimpleRequestHandler.cpp.o" \
@@ -199,6 +214,7 @@ prog: CMakeFiles/prog.dir/src/config/Config.cpp.o
 prog: CMakeFiles/prog.dir/src/kernel/DynamicRequestHandler.cpp.o
 prog: CMakeFiles/prog.dir/src/kernel/HTTPServer.cpp.o
 prog: CMakeFiles/prog.dir/src/kernel/ResponseSender.cpp.o
+prog: CMakeFiles/prog.dir/src/kernel/RouteConfigurator.cpp.o
 prog: CMakeFiles/prog.dir/src/kernel/Router.cpp.o
 prog: CMakeFiles/prog.dir/src/kernel/Session.cpp.o
 prog: CMakeFiles/prog.dir/src/kernel/SimpleRequestHandler.cpp.o
@@ -207,7 +223,7 @@ prog: CMakeFiles/prog.dir/build.make
 prog: /usr/lib/x86_64-linux-gnu/libssl.so
 prog: /usr/lib/x86_64-linux-gnu/libcrypto.so
 prog: CMakeFiles/prog.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/softadastra/Documents/cpp/softadastra/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable prog"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/softadastra/Documents/cpp/softadastra/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable prog"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/prog.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

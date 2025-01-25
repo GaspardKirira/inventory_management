@@ -24,6 +24,7 @@
 #include "Router.hpp"
 #include "Session.hpp"
 #include "ResponseSender.hpp"
+#include "RouteConfigurator.hpp"
 
 namespace Softadastra
 {
@@ -64,11 +65,13 @@ namespace Softadastra
          * @param socket Le socket de la connexion client.
          * @param router Le routeur utilisé pour acheminer les requêtes HTTP.
          */
-        void handle_client(tcp::socket socket, Softadastra::Router &router);
+        void handle_client(tcp::socket socket, Router &router);
 
-        Config &config_;                              ///< Référence à la configuration du serveur.
-        std::unique_ptr<net::io_context> io_context_; ///< Contexte d'entrée/sortie pour le serveur.
-        std::unique_ptr<tcp::acceptor> acceptor_;     ///< Accepteur pour accepter les connexions entrantes.
+        Config &config_;                                        ///< Référence à la configuration du serveur.
+        std::unique_ptr<net::io_context> io_context_;           ///< Contexte d'entrée/sortie pour le serveur.
+        std::unique_ptr<tcp::acceptor> acceptor_;               ///< Accepteur pour accepter les connexions entrantes.
+        Router router_;                                         ///< Router pour acheminer les requêtes HTTP.
+        std::unique_ptr<RouteConfigurator> route_configurator_; ///< Responsable de la configuration des routes.
     };
 };
 
