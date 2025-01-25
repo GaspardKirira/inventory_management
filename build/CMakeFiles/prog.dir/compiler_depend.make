@@ -467,10 +467,12 @@ CMakeFiles/prog.dir/src/kernel/DynamicRequestHandler.cpp.o: /home/softadastra/Do
   /usr/include/c++/13/bits/char_traits.h \
   /usr/include/c++/13/bits/charconv.h \
   /usr/include/c++/13/bits/chrono.h \
+  /usr/include/c++/13/bits/codecvt.h \
   /usr/include/c++/13/bits/concept_check.h \
   /usr/include/c++/13/bits/cpp_type_traits.h \
   /usr/include/c++/13/bits/cxxabi_forced.h \
   /usr/include/c++/13/bits/cxxabi_init_exception.h \
+  /usr/include/c++/13/bits/deque.tcc \
   /usr/include/c++/13/bits/enable_special_members.h \
   /usr/include/c++/13/bits/erase_if.h \
   /usr/include/c++/13/bits/exception.h \
@@ -486,8 +488,11 @@ CMakeFiles/prog.dir/src/kernel/DynamicRequestHandler.cpp.o: /home/softadastra/Do
   /usr/include/c++/13/bits/istream.tcc \
   /usr/include/c++/13/bits/locale_classes.h \
   /usr/include/c++/13/bits/locale_classes.tcc \
+  /usr/include/c++/13/bits/locale_conv.h \
   /usr/include/c++/13/bits/locale_facets.h \
   /usr/include/c++/13/bits/locale_facets.tcc \
+  /usr/include/c++/13/bits/locale_facets_nonio.h \
+  /usr/include/c++/13/bits/locale_facets_nonio.tcc \
   /usr/include/c++/13/bits/localefwd.h \
   /usr/include/c++/13/bits/memory_resource.h \
   /usr/include/c++/13/bits/memoryfwd.h \
@@ -503,6 +508,18 @@ CMakeFiles/prog.dir/src/kernel/DynamicRequestHandler.cpp.o: /home/softadastra/Do
   /usr/include/c++/13/bits/ptr_traits.h \
   /usr/include/c++/13/bits/range_access.h \
   /usr/include/c++/13/bits/refwrap.h \
+  /usr/include/c++/13/bits/regex.h \
+  /usr/include/c++/13/bits/regex.tcc \
+  /usr/include/c++/13/bits/regex_automaton.h \
+  /usr/include/c++/13/bits/regex_automaton.tcc \
+  /usr/include/c++/13/bits/regex_compiler.h \
+  /usr/include/c++/13/bits/regex_compiler.tcc \
+  /usr/include/c++/13/bits/regex_constants.h \
+  /usr/include/c++/13/bits/regex_error.h \
+  /usr/include/c++/13/bits/regex_executor.h \
+  /usr/include/c++/13/bits/regex_executor.tcc \
+  /usr/include/c++/13/bits/regex_scanner.h \
+  /usr/include/c++/13/bits/regex_scanner.tcc \
   /usr/include/c++/13/bits/requires_hosted.h \
   /usr/include/c++/13/bits/shared_ptr.h \
   /usr/include/c++/13/bits/shared_ptr_atomic.h \
@@ -511,19 +528,26 @@ CMakeFiles/prog.dir/src/kernel/DynamicRequestHandler.cpp.o: /home/softadastra/Do
   /usr/include/c++/13/bits/sstream.tcc \
   /usr/include/c++/13/bits/std_abs.h \
   /usr/include/c++/13/bits/std_function.h \
+  /usr/include/c++/13/bits/std_mutex.h \
+  /usr/include/c++/13/bits/std_thread.h \
   /usr/include/c++/13/bits/stl_algo.h \
   /usr/include/c++/13/bits/stl_algobase.h \
   /usr/include/c++/13/bits/stl_bvector.h \
   /usr/include/c++/13/bits/stl_construct.h \
+  /usr/include/c++/13/bits/stl_deque.h \
   /usr/include/c++/13/bits/stl_function.h \
   /usr/include/c++/13/bits/stl_heap.h \
   /usr/include/c++/13/bits/stl_iterator.h \
   /usr/include/c++/13/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/13/bits/stl_iterator_base_types.h \
+  /usr/include/c++/13/bits/stl_map.h \
+  /usr/include/c++/13/bits/stl_multimap.h \
   /usr/include/c++/13/bits/stl_pair.h \
   /usr/include/c++/13/bits/stl_raw_storage_iter.h \
   /usr/include/c++/13/bits/stl_relops.h \
+  /usr/include/c++/13/bits/stl_stack.h \
   /usr/include/c++/13/bits/stl_tempbuf.h \
+  /usr/include/c++/13/bits/stl_tree.h \
   /usr/include/c++/13/bits/stl_uninitialized.h \
   /usr/include/c++/13/bits/stl_vector.h \
   /usr/include/c++/13/bits/stream_iterator.h \
@@ -531,13 +555,16 @@ CMakeFiles/prog.dir/src/kernel/DynamicRequestHandler.cpp.o: /home/softadastra/Do
   /usr/include/c++/13/bits/streambuf_iterator.h \
   /usr/include/c++/13/bits/string_view.tcc \
   /usr/include/c++/13/bits/stringfwd.h \
+  /usr/include/c++/13/bits/this_thread_sleep.h \
   /usr/include/c++/13/bits/uniform_int_dist.h \
+  /usr/include/c++/13/bits/unique_lock.h \
   /usr/include/c++/13/bits/unique_ptr.h \
   /usr/include/c++/13/bits/unordered_map.h \
   /usr/include/c++/13/bits/uses_allocator.h \
   /usr/include/c++/13/bits/uses_allocator_args.h \
   /usr/include/c++/13/bits/utility.h \
   /usr/include/c++/13/bits/vector.tcc \
+  /usr/include/c++/13/bitset \
   /usr/include/c++/13/cassert \
   /usr/include/c++/13/cctype \
   /usr/include/c++/13/cerrno \
@@ -547,6 +574,7 @@ CMakeFiles/prog.dir/src/kernel/DynamicRequestHandler.cpp.o: /home/softadastra/Do
   /usr/include/c++/13/cmath \
   /usr/include/c++/13/compare \
   /usr/include/c++/13/complex \
+  /usr/include/c++/13/condition_variable \
   /usr/include/c++/13/csignal \
   /usr/include/c++/13/cstdarg \
   /usr/include/c++/13/cstddef \
@@ -559,6 +587,7 @@ CMakeFiles/prog.dir/src/kernel/DynamicRequestHandler.cpp.o: /home/softadastra/Do
   /usr/include/c++/13/cwctype \
   /usr/include/c++/13/debug/assertions.h \
   /usr/include/c++/13/debug/debug.h \
+  /usr/include/c++/13/deque \
   /usr/include/c++/13/exception \
   /usr/include/c++/13/ext/aligned_buffer.h \
   /usr/include/c++/13/ext/alloc_traits.h \
@@ -574,7 +603,10 @@ CMakeFiles/prog.dir/src/kernel/DynamicRequestHandler.cpp.o: /home/softadastra/Do
   /usr/include/c++/13/istream \
   /usr/include/c++/13/iterator \
   /usr/include/c++/13/limits \
+  /usr/include/c++/13/locale \
+  /usr/include/c++/13/map \
   /usr/include/c++/13/memory \
+  /usr/include/c++/13/mutex \
   /usr/include/c++/13/new \
   /usr/include/c++/13/ostream \
   /usr/include/c++/13/pstl/execution_defs.h \
@@ -582,12 +614,15 @@ CMakeFiles/prog.dir/src/kernel/DynamicRequestHandler.cpp.o: /home/softadastra/Do
   /usr/include/c++/13/pstl/glue_memory_defs.h \
   /usr/include/c++/13/pstl/pstl_config.h \
   /usr/include/c++/13/ratio \
+  /usr/include/c++/13/regex \
   /usr/include/c++/13/sstream \
+  /usr/include/c++/13/stack \
   /usr/include/c++/13/stdexcept \
   /usr/include/c++/13/streambuf \
   /usr/include/c++/13/string \
   /usr/include/c++/13/string_view \
   /usr/include/c++/13/system_error \
+  /usr/include/c++/13/thread \
   /usr/include/c++/13/tr1/bessel_function.tcc \
   /usr/include/c++/13/tr1/beta_function.tcc \
   /usr/include/c++/13/tr1/ell_integral.tcc \
@@ -613,6 +648,7 @@ CMakeFiles/prog.dir/src/kernel/DynamicRequestHandler.cpp.o: /home/softadastra/Do
   /usr/include/fcntl.h \
   /usr/include/features-time64.h \
   /usr/include/features.h \
+  /usr/include/libintl.h \
   /usr/include/limits.h \
   /usr/include/linux/close_range.h \
   /usr/include/linux/errno.h \
@@ -654,6 +690,8 @@ CMakeFiles/prog.dir/src/kernel/DynamicRequestHandler.cpp.o: /home/softadastra/Do
   /usr/include/x86_64-linux-gnu/asm/socket.h \
   /usr/include/x86_64-linux-gnu/asm/sockios.h \
   /usr/include/x86_64-linux-gnu/asm/types.h \
+  /usr/include/x86_64-linux-gnu/asm/unistd.h \
+  /usr/include/x86_64-linux-gnu/asm/unistd_64.h \
   /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
   /usr/include/x86_64-linux-gnu/bits/byteswap.h \
   /usr/include/x86_64-linux-gnu/bits/confname.h \
@@ -724,6 +762,7 @@ CMakeFiles/prog.dir/src/kernel/DynamicRequestHandler.cpp.o: /home/softadastra/Do
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
+  /usr/include/x86_64-linux-gnu/bits/syscall.h \
   /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
   /usr/include/x86_64-linux-gnu/bits/time.h \
   /usr/include/x86_64-linux-gnu/bits/time64.h \
@@ -787,7 +826,9 @@ CMakeFiles/prog.dir/src/kernel/DynamicRequestHandler.cpp.o: /home/softadastra/Do
   /usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/gthr-default.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/gthr.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/messages_members.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/time_members.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/sys/cdefs.h \
@@ -799,6 +840,7 @@ CMakeFiles/prog.dir/src/kernel/DynamicRequestHandler.cpp.o: /home/softadastra/Do
   /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
   /usr/include/x86_64-linux-gnu/sys/socket.h \
   /usr/include/x86_64-linux-gnu/sys/stat.h \
+  /usr/include/x86_64-linux-gnu/sys/syscall.h \
   /usr/include/x86_64-linux-gnu/sys/timerfd.h \
   /usr/include/x86_64-linux-gnu/sys/ttydefaults.h \
   /usr/include/x86_64-linux-gnu/sys/types.h \
@@ -1488,7 +1530,45 @@ CMakeFiles/prog.dir/src/kernel/DynamicRequestHandler.cpp.o: /home/softadastra/Do
   /usr/local/include/boost/utility/result_of.hpp \
   /usr/local/include/boost/utility/string_view.hpp \
   /usr/local/include/boost/utility/string_view_fwd.hpp \
-  /usr/local/include/boost/version.hpp
+  /usr/local/include/boost/version.hpp \
+  /usr/local/include/spdlog/common-inl.h \
+  /usr/local/include/spdlog/common.h \
+  /usr/local/include/spdlog/details/backtracer-inl.h \
+  /usr/local/include/spdlog/details/backtracer.h \
+  /usr/local/include/spdlog/details/circular_q.h \
+  /usr/local/include/spdlog/details/console_globals.h \
+  /usr/local/include/spdlog/details/fmt_helper.h \
+  /usr/local/include/spdlog/details/log_msg-inl.h \
+  /usr/local/include/spdlog/details/log_msg.h \
+  /usr/local/include/spdlog/details/log_msg_buffer-inl.h \
+  /usr/local/include/spdlog/details/log_msg_buffer.h \
+  /usr/local/include/spdlog/details/null_mutex.h \
+  /usr/local/include/spdlog/details/os-inl.h \
+  /usr/local/include/spdlog/details/os.h \
+  /usr/local/include/spdlog/details/periodic_worker-inl.h \
+  /usr/local/include/spdlog/details/periodic_worker.h \
+  /usr/local/include/spdlog/details/registry-inl.h \
+  /usr/local/include/spdlog/details/registry.h \
+  /usr/local/include/spdlog/details/synchronous_factory.h \
+  /usr/local/include/spdlog/fmt/bundled/base.h \
+  /usr/local/include/spdlog/fmt/bundled/core.h \
+  /usr/local/include/spdlog/fmt/bundled/format-inl.h \
+  /usr/local/include/spdlog/fmt/bundled/format.h \
+  /usr/local/include/spdlog/fmt/fmt.h \
+  /usr/local/include/spdlog/formatter.h \
+  /usr/local/include/spdlog/logger-inl.h \
+  /usr/local/include/spdlog/logger.h \
+  /usr/local/include/spdlog/mdc.h \
+  /usr/local/include/spdlog/pattern_formatter-inl.h \
+  /usr/local/include/spdlog/pattern_formatter.h \
+  /usr/local/include/spdlog/sinks/ansicolor_sink-inl.h \
+  /usr/local/include/spdlog/sinks/ansicolor_sink.h \
+  /usr/local/include/spdlog/sinks/sink-inl.h \
+  /usr/local/include/spdlog/sinks/sink.h \
+  /usr/local/include/spdlog/spdlog-inl.h \
+  /usr/local/include/spdlog/spdlog.h \
+  /usr/local/include/spdlog/tweakme.h \
+  /usr/local/include/spdlog/version.h
 
 CMakeFiles/prog.dir/src/kernel/HTTPServer.cpp.o: /home/softadastra/Documents/cpp/softadastra/src/kernel/HTTPServer.cpp \
   /home/softadastra/Documents/cpp/softadastra/src/config/Config.hpp \
@@ -4828,6 +4908,7 @@ CMakeFiles/prog.dir/src/kernel/Router.cpp.o: /home/softadastra/Documents/cpp/sof
   /usr/include/c++/13/bits/cpp_type_traits.h \
   /usr/include/c++/13/bits/cxxabi_forced.h \
   /usr/include/c++/13/bits/cxxabi_init_exception.h \
+  /usr/include/c++/13/bits/deque.tcc \
   /usr/include/c++/13/bits/enable_special_members.h \
   /usr/include/c++/13/bits/erase_if.h \
   /usr/include/c++/13/bits/exception.h \
@@ -4876,6 +4957,18 @@ CMakeFiles/prog.dir/src/kernel/Router.cpp.o: /home/softadastra/Documents/cpp/sof
   /usr/include/c++/13/bits/quoted_string.h \
   /usr/include/c++/13/bits/range_access.h \
   /usr/include/c++/13/bits/refwrap.h \
+  /usr/include/c++/13/bits/regex.h \
+  /usr/include/c++/13/bits/regex.tcc \
+  /usr/include/c++/13/bits/regex_automaton.h \
+  /usr/include/c++/13/bits/regex_automaton.tcc \
+  /usr/include/c++/13/bits/regex_compiler.h \
+  /usr/include/c++/13/bits/regex_compiler.tcc \
+  /usr/include/c++/13/bits/regex_constants.h \
+  /usr/include/c++/13/bits/regex_error.h \
+  /usr/include/c++/13/bits/regex_executor.h \
+  /usr/include/c++/13/bits/regex_executor.tcc \
+  /usr/include/c++/13/bits/regex_scanner.h \
+  /usr/include/c++/13/bits/regex_scanner.tcc \
   /usr/include/c++/13/bits/requires_hosted.h \
   /usr/include/c++/13/bits/shared_ptr.h \
   /usr/include/c++/13/bits/shared_ptr_atomic.h \
@@ -4891,6 +4984,7 @@ CMakeFiles/prog.dir/src/kernel/Router.cpp.o: /home/softadastra/Documents/cpp/sof
   /usr/include/c++/13/bits/stl_algobase.h \
   /usr/include/c++/13/bits/stl_bvector.h \
   /usr/include/c++/13/bits/stl_construct.h \
+  /usr/include/c++/13/bits/stl_deque.h \
   /usr/include/c++/13/bits/stl_function.h \
   /usr/include/c++/13/bits/stl_heap.h \
   /usr/include/c++/13/bits/stl_iterator.h \
@@ -4905,6 +4999,7 @@ CMakeFiles/prog.dir/src/kernel/Router.cpp.o: /home/softadastra/Documents/cpp/sof
   /usr/include/c++/13/bits/stl_raw_storage_iter.h \
   /usr/include/c++/13/bits/stl_relops.h \
   /usr/include/c++/13/bits/stl_set.h \
+  /usr/include/c++/13/bits/stl_stack.h \
   /usr/include/c++/13/bits/stl_tempbuf.h \
   /usr/include/c++/13/bits/stl_tree.h \
   /usr/include/c++/13/bits/stl_uninitialized.h \
@@ -4927,6 +5022,7 @@ CMakeFiles/prog.dir/src/kernel/Router.cpp.o: /home/softadastra/Documents/cpp/sof
   /usr/include/c++/13/bits/valarray_array.tcc \
   /usr/include/c++/13/bits/valarray_before.h \
   /usr/include/c++/13/bits/vector.tcc \
+  /usr/include/c++/13/bitset \
   /usr/include/c++/13/cassert \
   /usr/include/c++/13/cctype \
   /usr/include/c++/13/cerrno \
@@ -4950,6 +5046,7 @@ CMakeFiles/prog.dir/src/kernel/Router.cpp.o: /home/softadastra/Documents/cpp/sof
   /usr/include/c++/13/cwctype \
   /usr/include/c++/13/debug/assertions.h \
   /usr/include/c++/13/debug/debug.h \
+  /usr/include/c++/13/deque \
   /usr/include/c++/13/exception \
   /usr/include/c++/13/ext/aligned_buffer.h \
   /usr/include/c++/13/ext/alloc_traits.h \
@@ -4984,8 +5081,10 @@ CMakeFiles/prog.dir/src/kernel/Router.cpp.o: /home/softadastra/Documents/cpp/sof
   /usr/include/c++/13/pstl/glue_numeric_defs.h \
   /usr/include/c++/13/pstl/pstl_config.h \
   /usr/include/c++/13/ratio \
+  /usr/include/c++/13/regex \
   /usr/include/c++/13/set \
   /usr/include/c++/13/sstream \
+  /usr/include/c++/13/stack \
   /usr/include/c++/13/stdexcept \
   /usr/include/c++/13/streambuf \
   /usr/include/c++/13/string \
@@ -11199,44 +11298,6 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 
 /home/softadastra/Documents/cpp/softadastra/src/kernel/SimpleRequestHandler.cpp:
 
-/usr/local/include/spdlog/spdlog-inl.h:
-
-/usr/local/include/spdlog/sinks/sink.h:
-
-/usr/local/include/spdlog/sinks/ansicolor_sink.h:
-
-/usr/local/include/spdlog/pattern_formatter.h:
-
-/usr/local/include/spdlog/pattern_formatter-inl.h:
-
-/usr/local/include/spdlog/logger.h:
-
-/usr/local/include/spdlog/logger-inl.h:
-
-/usr/local/include/spdlog/fmt/fmt.h:
-
-/usr/local/include/spdlog/fmt/bundled/format-inl.h:
-
-/usr/local/include/spdlog/fmt/bundled/core.h:
-
-/usr/local/include/spdlog/fmt/bundled/base.h:
-
-/usr/local/include/spdlog/details/registry.h:
-
-/usr/local/include/spdlog/details/registry-inl.h:
-
-/usr/local/include/spdlog/details/periodic_worker-inl.h:
-
-/usr/local/include/spdlog/details/os-inl.h:
-
-/usr/local/include/spdlog/details/fmt_helper.h:
-
-/usr/local/include/spdlog/details/circular_q.h:
-
-/usr/local/include/spdlog/details/backtracer-inl.h:
-
-/usr/local/include/spdlog/common-inl.h:
-
 /usr/local/include/boost/type_traits/is_bounded_array.hpp:
 
 /usr/local/include/boost/smart_ptr/make_shared_object.hpp:
@@ -11457,10 +11518,6 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 
 /usr/local/include/boost/predef/architecture/sys390.h:
 
-/usr/local/include/spdlog/details/periodic_worker.h:
-
-/usr/local/include/boost/predef/architecture/sys370.h:
-
 /usr/local/include/boost/predef/architecture/superh.h:
 
 /usr/local/include/boost/predef/architecture/pyramid.h:
@@ -11545,8 +11602,6 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 
 /usr/local/include/boost/mpl/aux_/type_wrapper.hpp:
 
-/usr/local/include/boost/mpl/aux_/preprocessor/params.hpp:
-
 /usr/local/include/boost/mpl/aux_/preprocessor/enum.hpp:
 
 /usr/local/include/boost/mpl/aux_/preprocessor/def_params_tail.hpp:
@@ -11582,10 +11637,6 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 /usr/local/include/boost/mpl/aux_/config/preprocessor.hpp:
 
 /usr/local/include/boost/mpl/aux_/config/msvc_typename.hpp:
-
-/usr/local/include/spdlog/details/log_msg.h:
-
-/usr/local/include/boost/mpl/aux_/config/msvc.hpp:
 
 /usr/local/include/boost/mpl/aux_/config/intel.hpp:
 
@@ -11773,10 +11824,6 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 
 /usr/local/include/boost/asio/ssl/error.hpp:
 
-/usr/local/include/spdlog/common.h:
-
-/usr/local/include/boost/asio/ssl/detail/stream_core.hpp:
-
 /usr/local/include/boost/asio/ssl/detail/shutdown_op.hpp:
 
 /usr/local/include/boost/asio/ssl/detail/read_op.hpp:
@@ -11869,13 +11916,9 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 
 /usr/local/include/boost/asio/deadline_timer.hpp:
 
-/usr/local/include/boost/asio/connect.hpp:
-
 /usr/local/include/boost/asio/basic_socket_acceptor.hpp:
 
 /usr/local/include/boost/asio/basic_deadline_timer.hpp:
-
-/usr/include/x86_64-linux-gnu/sys/syscall.h:
 
 /usr/include/x86_64-linux-gnu/openssl/opensslconf.h:
 
@@ -11945,15 +11988,7 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 
 /usr/include/openssl/engine.h:
 
-/usr/include/x86_64-linux-gnu/asm/unistd_64.h:
-
-/usr/include/openssl/e_os2.h:
-
 /usr/include/openssl/dtls1.h:
-
-/usr/local/include/spdlog/details/log_msg_buffer.h:
-
-/usr/include/openssl/dsaerr.h:
 
 /usr/include/openssl/dsa.h:
 
@@ -11993,21 +12028,67 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 
 /usr/include/openssl/asn1.h:
 
-/usr/include/c++/13/thread:
-
 /usr/include/c++/13/stdlib.h:
 
-/usr/include/c++/13/condition_variable:
-
-/usr/include/c++/13/bits/this_thread_sleep.h:
-
 /usr/include/c++/13/bits/stl_multiset.h:
-
-/usr/include/c++/13/bits/std_thread.h:
 
 /home/softadastra/Documents/cpp/softadastra/src/kernel/Session.hpp:
 
 /home/softadastra/Documents/cpp/softadastra/src/kernel/ResponseSender.hpp:
+
+/usr/local/include/spdlog/spdlog-inl.h:
+
+/usr/local/include/spdlog/sinks/sink.h:
+
+/usr/local/include/spdlog/sinks/ansicolor_sink.h:
+
+/usr/local/include/spdlog/pattern_formatter.h:
+
+/usr/local/include/spdlog/pattern_formatter-inl.h:
+
+/usr/local/include/spdlog/logger.h:
+
+/usr/local/include/spdlog/logger-inl.h:
+
+/usr/local/include/spdlog/fmt/fmt.h:
+
+/usr/local/include/spdlog/fmt/bundled/format-inl.h:
+
+/usr/local/include/spdlog/fmt/bundled/core.h:
+
+/usr/local/include/spdlog/fmt/bundled/base.h:
+
+/usr/local/include/spdlog/details/registry.h:
+
+/usr/local/include/spdlog/details/registry-inl.h:
+
+/usr/local/include/boost/predef/architecture/sys370.h:
+
+/usr/local/include/spdlog/details/periodic_worker.h:
+
+/usr/local/include/spdlog/details/periodic_worker-inl.h:
+
+/usr/local/include/spdlog/details/os-inl.h:
+
+/usr/include/openssl/dsaerr.h:
+
+/usr/local/include/spdlog/details/log_msg_buffer.h:
+
+/usr/local/include/boost/mpl/aux_/config/msvc.hpp:
+
+/usr/local/include/spdlog/details/log_msg.h:
+
+/usr/local/include/spdlog/details/fmt_helper.h:
+
+/usr/local/include/spdlog/details/circular_q.h:
+
+/usr/local/include/spdlog/details/backtracer-inl.h:
+
+/usr/local/include/boost/asio/ssl/detail/stream_core.hpp:
+
+/usr/local/include/spdlog/common.h:
+
+/usr/local/include/spdlog/common-inl.h:
 
 /usr/local/include/boost/utility/string_view_fwd.hpp:
 
@@ -12123,49 +12204,49 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 
 /usr/local/include/boost/type_traits/has_unary_plus.hpp:
 
-/usr/local/include/boost/asio/basic_streambuf_fwd.hpp:
+/usr/local/include/boost/type_traits/remove_bounds.hpp:
 
-/usr/local/include/boost/asio/basic_stream_socket.hpp:
-
-/usr/include/c++/13/bits/stringfwd.h:
-
-/usr/local/include/boost/asio/async_result.hpp:
-
-/usr/include/linux/limits.h:
-
-/usr/local/include/boost/asio/any_io_executor.hpp:
-
-/usr/include/x86_64-linux-gnu/sys/un.h:
-
-/usr/local/include/boost/asio/execution/sender.hpp:
+/usr/local/include/boost/type_traits/has_unary_minus.hpp:
 
 /usr/local/include/boost/type_traits/has_trivial_move_constructor.hpp:
 
-/usr/include/x86_64-linux-gnu/sys/uio.h:
+/usr/local/include/boost/type_traits/has_trivial_copy.hpp:
 
-/usr/local/include/boost/asio/write.hpp:
+/usr/local/include/boost/type_traits/has_right_shift_assign.hpp:
 
-/usr/include/x86_64-linux-gnu/sys/stat.h:
+/usr/local/include/boost/type_traits/has_pre_increment.hpp:
 
-/usr/local/include/boost/asio/ssl/detail/write_op.hpp:
+/usr/local/include/boost/type_traits/has_pre_decrement.hpp:
 
-/usr/local/include/boost/assert/source_location.hpp:
+/usr/local/include/boost/type_traits/has_post_decrement.hpp:
 
-/usr/local/include/boost/predef/architecture/parisc.h:
+/usr/local/include/boost/asio/ssl/detail/password_callback.hpp:
 
-/usr/include/nlohmann/detail/json_pointer.hpp:
+/usr/local/include/boost/type_traits/has_nothrow_destructor.hpp:
 
-/usr/include/x86_64-linux-gnu/sys/poll.h:
+/usr/local/include/boost/type_traits/has_nothrow_copy.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/uio-ext.h:
+/usr/local/include/boost/utility/compare_pointees.hpp:
 
-/usr/include/fcntl.h:
+/usr/local/include/boost/type_traits/has_nothrow_constructor.hpp:
 
-/usr/include/asm-generic/posix_types.h:
+/usr/local/include/boost/regex/v5/perl_matcher.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
+/usr/local/include/boost/type_traits/has_nothrow_assign.hpp:
 
-/usr/local/include/boost/asio/cancellation_state.hpp:
+/usr/local/include/boost/numeric/conversion/detail/conversion_traits.hpp:
+
+/usr/local/include/boost/type_traits/has_not_equal_to.hpp:
+
+/usr/local/include/boost/type_traits/has_negate.hpp:
+
+/usr/local/include/boost/type_traits/has_multiplies_assign.hpp:
+
+/usr/local/include/boost/type_traits/has_multiplies.hpp:
+
+/usr/local/include/boost/type_traits/has_modulus_assign.hpp:
+
+/usr/local/include/boost/type_traits/has_modulus.hpp:
 
 /usr/local/include/boost/asio/traits/static_query.hpp:
 
@@ -12186,6 +12267,12 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 /usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
 
 /usr/include/wchar.h:
+
+/usr/include/openssl/e_os2.h:
+
+/usr/include/x86_64-linux-gnu/asm/unistd_64.h:
+
+/usr/include/c++/13/bits/this_thread_sleep.h:
 
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 
@@ -12225,6 +12312,10 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 
 /usr/include/x86_64-linux-gnu/asm/ioctl.h:
 
+/usr/local/include/boost/type_traits/has_plus.hpp:
+
+/usr/include/x86_64-linux-gnu/asm/bitsperlong.h:
+
 /usr/local/include/boost/asio/ip/resolver_base.hpp:
 
 /usr/local/include/boost/type_traits/is_copy_assignable.hpp:
@@ -12233,13 +12324,37 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 
 /usr/local/include/boost/beast/http/impl/parser.hpp:
 
-/usr/include/net/if.h:
-
 /usr/include/linux/stddef.h:
+
+/usr/include/c++/13/thread:
+
+/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
+
+/usr/local/include/boost/asio/connect.hpp:
+
+/usr/include/c++/13/deque:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
+
+/usr/local/include/boost/asio/detail/call_stack.hpp:
 
 /usr/include/openssl/prov_ssl.h:
 
 /usr/local/include/boost/type_traits/has_complement.hpp:
+
+/usr/include/net/if.h:
+
+/usr/include/c++/13/bitset:
+
+/usr/include/c++/13/bits/stl_stack.h:
+
+/usr/include/c++/13/bits/regex_automaton.tcc:
+
+/usr/include/c++/13/bits/regex.tcc:
+
+/usr/local/include/spdlog/tweakme.h:
+
+/usr/local/include/boost/system/errc.hpp:
 
 /usr/local/include/boost/type_traits/add_lvalue_reference.hpp:
 
@@ -12250,6 +12365,8 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 /usr/include/asm-generic/socket.h:
 
 /usr/include/x86_64-linux-gnu/sys/types.h:
+
+/usr/include/asm-generic/posix_types.h:
 
 /usr/include/asm-generic/ioctl.h:
 
@@ -12295,19 +12412,7 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 
 /usr/include/c++/13/utility:
 
-/usr/local/include/boost/regex/v5/regex_workaround.hpp:
-
-/usr/local/include/boost/asio/associated_executor.hpp:
-
-/usr/include/stdint.h:
-
 /usr/include/netinet/in.h:
-
-/usr/local/include/boost/predef/compiler/sgi_mipspro.h:
-
-/usr/local/include/boost/beast/http/impl/verb.ipp:
-
-/usr/local/include/boost/smart_ptr/detail/shared_count.hpp:
 
 /usr/local/include/boost/mpl/aux_/config/nttp.hpp:
 
@@ -12318,8 +12423,6 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 /usr/local/include/boost/asio/associator.hpp:
 
 /usr/local/include/boost/intrusive/detail/math.hpp:
-
-/usr/local/include/boost/type_traits/has_trivial_copy.hpp:
 
 /usr/local/include/boost/smart_ptr/bad_weak_ptr.hpp:
 
@@ -12335,15 +12438,11 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 
 /usr/local/include/boost/beast/core/buffers_suffix.hpp:
 
-/usr/include/x86_64-linux-gnu/sys/ucontext.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h:
-
-/usr/include/mysql_connection.h:
-
 /usr/local/include/boost/smart_ptr/shared_ptr.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/ss_flags.h:
+
+/usr/include/x86_64-linux-gnu/sys/syscall.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-least.h:
 
@@ -12371,10 +12470,6 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 
 /usr/local/include/boost/config/pragma_message.hpp:
 
-/usr/local/include/boost/asio/associated_allocator.hpp:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/limits.h:
-
 /usr/local/include/boost/asio/ssl/impl/context.hpp:
 
 /usr/local/include/boost/config/detail/select_compiler_config.hpp:
@@ -12394,6 +12489,16 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 /usr/local/include/boost/mp11/detail/mp_rename.hpp:
 
 /usr/local/include/boost/beast/core/file_base.hpp:
+
+/usr/local/include/boost/asio/ssl/detail/write_op.hpp:
+
+/usr/local/include/boost/assert/source_location.hpp:
+
+/usr/local/include/boost/predef/architecture/parisc.h:
+
+/usr/include/nlohmann/detail/json_pointer.hpp:
+
+/usr/include/x86_64-linux-gnu/sys/stat.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h:
 
@@ -12471,6 +12576,10 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 
 /usr/include/c++/13/bits/charconv.h:
 
+/usr/local/include/boost/type_traits/has_minus_assign.hpp:
+
+/usr/local/include/boost/asio/detail/dependent_type.hpp:
+
 /usr/local/include/boost/preprocessor/comma_if.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
@@ -12490,6 +12599,8 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 /usr/local/include/boost/asio/detail/scheduler_operation.hpp:
 
 /usr/local/include/boost/asio/traits/require_member.hpp:
+
+/usr/include/c++/13/bits/regex_compiler.tcc:
 
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 
@@ -12521,10 +12632,6 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
 
-/usr/local/include/boost/predef/architecture/sparc.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h:
-
 /home/softadastra/Documents/cpp/softadastra/src/kernel/HTTPServer.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
@@ -12549,9 +12656,9 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 
 /usr/local/include/boost/intrusive/detail/key_nodeptr_comp.hpp:
 
-/usr/local/include/spdlog/spdlog.h:
-
 /usr/local/include/boost/mpl/aux_/nested_type_wknd.hpp:
+
+/usr/local/include/spdlog/spdlog.h:
 
 /usr/include/x86_64-linux-gnu/bits/time64.h:
 
@@ -12562,6 +12669,10 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 /usr/local/include/boost/type_traits/detail/is_function_cxx_11.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
+
+/usr/include/c++/13/condition_variable:
+
+/usr/local/include/boost/type.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
@@ -12579,9 +12690,11 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 
 /usr/include/x86_64-linux-gnu/bits/time.h:
 
-/usr/local/include/boost/asio/ssl/detail/password_callback.hpp:
+/usr/include/c++/13/complex:
 
-/usr/local/include/boost/type_traits/has_nothrow_destructor.hpp:
+/usr/local/include/boost/asio/detail/limits.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/sched.h:
 
 /usr/local/include/boost/regex/v5/pattern_except.hpp:
 
@@ -12604,10 +12717,6 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 /usr/include/linux/falloc.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
-
-/usr/local/include/boost/numeric/conversion/detail/conversion_traits.hpp:
-
-/usr/local/include/boost/type_traits/has_not_equal_to.hpp:
 
 /usr/local/include/boost/predef/library/c/_prefix.h:
 
@@ -12632,12 +12741,6 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 /usr/local/include/boost/asio/registered_buffer.hpp:
 
 /usr/local/include/boost/core/empty_value.hpp:
-
-/usr/include/x86_64-linux-gnu/sys/ttydefaults.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
-
-/usr/local/include/boost/io/ostream_put.hpp:
 
 /usr/include/c++/13/tuple:
 
@@ -12751,6 +12854,10 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 
 /usr/include/c++/13/bits/vector.tcc:
 
+/usr/include/c++/13/bits/stringfwd.h:
+
+/usr/local/include/boost/asio/basic_stream_socket.hpp:
+
 /usr/include/c++/13/bits/refwrap.h:
 
 /usr/include/c++/13/bits/gslice.h:
@@ -12768,6 +12875,12 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 /usr/include/x86_64-linux-gnu/bits/ioctl-types.h:
 
 /usr/include/c++/13/bits/align.h:
+
+/usr/include/stdint.h:
+
+/usr/local/include/boost/regex/v5/regex_workaround.hpp:
+
+/usr/local/include/boost/asio/associated_executor.hpp:
 
 /usr/include/endian.h:
 
@@ -12791,6 +12904,10 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 
 /usr/include/nlohmann/detail/hash.hpp:
 
+/usr/include/c++/13/stack:
+
+/usr/local/include/boost/type_traits/has_logical_and.hpp:
+
 /usr/include/c++/13/bits/stl_numeric.h:
 
 /usr/include/nlohmann/detail/meta/call_std/begin.hpp:
@@ -12800,6 +12917,10 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 /usr/include/c++/13/bits/stl_iterator_base_types.h:
 
 /usr/local/include/boost/asio/execution/relationship.hpp:
+
+/usr/local/include/boost/type_traits/has_right_shift.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
 
 /usr/local/include/boost/config/no_tr1/cmath.hpp:
 
@@ -12853,10 +12974,6 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 
 /usr/local/include/boost/beast/http/impl/write.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
-
-/usr/local/include/boost/type_traits/has_right_shift.hpp:
-
 /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
 
 /usr/include/math.h:
@@ -12883,11 +13000,19 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 
 /usr/local/include/boost/beast/http/impl/message.hpp:
 
+/usr/include/linux/limits.h:
+
+/usr/local/include/boost/asio/async_result.hpp:
+
 /usr/include/c++/13/bits/shared_ptr.h:
 
 /usr/local/include/boost/preprocessor/arithmetic/detail/maximum_number.hpp:
 
 /usr/include/c++/13/bits/string_view.tcc:
+
+/usr/local/include/boost/asio/handler_invoke_hook.hpp:
+
+/usr/local/include/boost/beast/core/buffers_prefix.hpp:
 
 /usr/local/include/boost/beast/http/rfc7230.hpp:
 
@@ -12898,10 +13023,6 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 /usr/local/include/boost/asio/detail/event.hpp:
 
 /usr/include/c++/13/bits/requires_hosted.h:
-
-/usr/local/include/boost/asio/detail/dependent_type.hpp:
-
-/usr/local/include/boost/type_traits/has_minus_assign.hpp:
 
 /usr/include/linux/stat.h:
 
@@ -12916,6 +13037,8 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 /usr/local/include/boost/intrusive/detail/node_holder.hpp:
 
 /usr/local/include/boost/asio/ssl/impl/host_name_verification.ipp:
+
+/usr/include/c++/13/bits/regex_executor.tcc:
 
 /usr/include/linux/posix_types.h:
 
@@ -12959,10 +13082,6 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 
 /usr/local/include/boost/beast/http/fields.hpp:
 
-/usr/include/c++/13/bits/fs_dir.h:
-
-/usr/include/c++/13/bits/basic_ios.tcc:
-
 /usr/include/openssl/ec.h:
 
 /usr/include/c++/13/bits/stl_algobase.h:
@@ -12977,17 +13096,11 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 
 /usr/local/include/boost/mpl/aux_/config/static_constant.hpp:
 
-/usr/local/include/boost/intrusive/detail/value_functors.hpp:
-
 /usr/include/x86_64-linux-gnu/bits/timex.h:
 
+/usr/local/include/boost/intrusive/detail/value_functors.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/endianness.h:
-
-/usr/local/include/boost/predef/compiler/clang.h:
-
-/usr/local/include/boost/beast/http/status.hpp:
-
-/usr/local/include/boost/system/detail/generic_category_message.hpp:
 
 /usr/local/include/boost/mpl/aux_/na_fwd.hpp:
 
@@ -13031,10 +13144,6 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 
 /usr/include/c++/13/bits/hashtable_policy.h:
 
-/usr/local/include/boost/predef/detail/_cassert.h:
-
-/usr/local/include/boost/asio/execution/detail/as_invocable.hpp:
-
 /usr/local/include/boost/beast/core/flat_stream.hpp:
 
 /usr/local/include/boost/move/detail/iterator_traits.hpp:
@@ -13048,10 +13157,6 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 /usr/include/c++/13/bits/exception_ptr.h:
 
 /usr/include/c++/13/bits/specfun.h:
-
-/usr/local/include/boost/predef/compiler/intel.h:
-
-/usr/local/include/boost/beast/http/buffer_body.hpp:
 
 /usr/local/include/boost/asio/detail/reactive_socket_sendto_op.hpp:
 
@@ -13067,6 +13172,12 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 
 /usr/include/c++/13/bits/locale_facets.h:
 
+/usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h:
+
+/usr/include/mysql_connection.h:
+
+/usr/include/x86_64-linux-gnu/sys/ucontext.h:
+
 /usr/include/openssl/objects.h:
 
 /usr/local/include/boost/smart_ptr/detail/spinlock.hpp:
@@ -13079,9 +13190,9 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 
 /usr/include/c++/13/backward/binders.h:
 
-/usr/local/include/spdlog/sinks/ansicolor_sink-inl.h:
-
 /usr/local/include/boost/beast/core/impl/buffered_read_stream.hpp:
+
+/usr/local/include/spdlog/sinks/ansicolor_sink-inl.h:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h:
 
@@ -13189,6 +13300,8 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 
 /usr/local/include/boost/mp11/detail/mp_is_list.hpp:
 
+/usr/include/c++/13/bits/stl_deque.h:
+
 /usr/local/include/boost/beast/http/vector_body.hpp:
 
 /usr/include/string.h:
@@ -13217,10 +13330,6 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 
 /usr/local/include/boost/intrusive/pointer_plus_bits.hpp:
 
-/usr/include/c++/13/ext/alloc_traits.h:
-
-/usr/include/x86_64-linux-gnu/bits/uio_lim.h:
-
 /usr/include/c++/13/bits/stream_iterator.h:
 
 /usr/local/include/boost/mpl/equal_to.hpp:
@@ -13247,9 +13356,9 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 
 /usr/local/include/boost/asio/traits/schedule_free.hpp:
 
-/usr/local/include/spdlog/version.h:
-
 /usr/local/include/boost/preprocessor/comparison/limits/not_equal_256.hpp:
+
+/usr/local/include/spdlog/version.h:
 
 /usr/include/c++/13/bits/stl_raw_storage_iter.h:
 
@@ -13303,8 +13412,6 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 
 /usr/include/c++/13/bits/unique_lock.h:
 
-/usr/local/include/boost/type_traits/has_multiplies.hpp:
-
 /usr/include/wctype.h:
 
 /usr/include/c++/13/mutex:
@@ -13328,6 +13435,10 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 /usr/local/include/boost/asio/detail/impl/throw_error.ipp:
 
 /usr/local/include/boost/beast/core/flat_static_buffer.hpp:
+
+/usr/local/include/boost/beast/http/write.hpp:
+
+/usr/include/nlohmann/detail/meta/detected.hpp:
 
 /usr/local/include/boost/beast/http/detail/rfc7230.hpp:
 
@@ -13405,18 +13516,6 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 
 /usr/include/c++/13/bits/exception.h:
 
-/usr/local/include/boost/asio/bind_executor.hpp:
-
-/usr/local/include/boost/mpl/aux_/config/dtp.hpp:
-
-/usr/local/include/boost/logic/tribool.hpp:
-
-/usr/local/include/boost/smart_ptr/detail/sp_nullptr_t.hpp:
-
-/usr/local/include/boost/cstdint.hpp:
-
-/usr/local/include/boost/asio/detail/thread_info_base.hpp:
-
 /usr/include/c++/13/bits/stl_set.h:
 
 /usr/include/nlohmann/adl_serializer.hpp:
@@ -13430,6 +13529,14 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 /usr/local/include/boost/date_time/time_clock.hpp:
 
 /usr/include/c++/13/bits/locale_facets_nonio.h:
+
+/usr/include/c++/13/bits/basic_ios.tcc:
+
+/usr/include/c++/13/bits/fs_dir.h:
+
+/usr/include/x86_64-linux-gnu/sys/un.h:
+
+/usr/local/include/boost/asio/execution/sender.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
 
@@ -13479,19 +13586,23 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 
 /usr/local/include/boost/config/detail/suffix.hpp:
 
+/usr/include/c++/13/regex:
+
 /usr/include/c++/13/bits/uniform_int_dist.h:
 
 /usr/include/c++/13/bits/locale_classes.tcc:
 
 /usr/include/c++/13/cctype:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
-
-/usr/local/include/boost/asio/detail/call_stack.hpp:
-
 /usr/include/c++/13/streambuf:
 
 /usr/include/c++/13/tr1/gamma.tcc:
+
+/usr/local/include/boost/mpl/aux_/config/lambda.hpp:
+
+/usr/local/include/boost/beast/core/file_posix.hpp:
+
+/usr/local/include/boost/asio/detail/reactor_op.hpp:
 
 /usr/local/include/boost/predef/library/std/stdcpp3.h:
 
@@ -13565,19 +13676,31 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 
 /usr/local/include/boost/intrusive/detail/assert.hpp:
 
+/usr/include/c++/13/bits/std_thread.h:
+
+/usr/local/include/boost/beast/http/detail/rfc7230.ipp:
+
+/usr/local/include/boost/mpl/aux_/config/dtp.hpp:
+
+/usr/local/include/boost/logic/tribool.hpp:
+
+/usr/local/include/boost/smart_ptr/detail/sp_nullptr_t.hpp:
+
+/usr/local/include/boost/asio/bind_executor.hpp:
+
+/usr/local/include/boost/cstdint.hpp:
+
+/usr/local/include/boost/asio/detail/thread_info_base.hpp:
+
 /usr/include/c++/13/bits/forward_list.h:
 
 /usr/include/c++/13/tr1/bessel_function.tcc:
 
-/usr/include/c++/13/complex:
+/usr/local/include/boost/predef/detail/_cassert.h:
 
-/usr/include/x86_64-linux-gnu/bits/sched.h:
+/usr/local/include/boost/asio/execution/detail/as_invocable.hpp:
 
-/usr/local/include/boost/asio/detail/limits.hpp:
-
-/usr/include/nlohmann/detail/meta/detected.hpp:
-
-/usr/local/include/boost/beast/http/write.hpp:
+/usr/include/c++/13/bits/regex_scanner.tcc:
 
 /usr/local/include/boost/predef/compiler/nvcc.h:
 
@@ -13621,6 +13744,8 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 
 /usr/include/nlohmann/detail/conversions/to_json.hpp:
 
+/usr/include/c++/13/bits/regex_compiler.h:
+
 /usr/include/c++/13/list:
 
 /usr/include/nlohmann/detail/input/position_t.hpp:
@@ -13636,6 +13761,10 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 /usr/local/include/boost/intrusive/detail/hook_traits.hpp:
 
 /usr/include/c++/13/pstl/glue_numeric_defs.h:
+
+/usr/local/include/boost/mpl/aux_/preprocessor/params.hpp:
+
+/usr/include/c++/13/bits/regex_automaton.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h:
 
@@ -13675,11 +13804,17 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 
 /usr/local/include/boost/asio/detail/impl/resolver_service_base.ipp:
 
+/usr/include/c++/13/bits/regex.h:
+
 /usr/local/include/boost/intrusive/detail/uncast.hpp:
 
 /usr/include/openssl/ct.h:
 
 /usr/include/c++/13/tr1/ell_integral.tcc:
+
+/usr/local/include/boost/type_traits/has_trivial_destructor.hpp:
+
+/usr/include/c++/13/tr1/exp_integral.tcc:
 
 /usr/include/c++/13/bits/range_access.h:
 
@@ -13695,6 +13830,8 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 
 /usr/include/x86_64-linux-gnu/bits/sigcontext.h:
 
+/usr/include/c++/13/bits/regex_executor.h:
+
 /usr/include/c++/13/unordered_map:
 
 /usr/local/include/boost/predef/architecture/blackfin.h:
@@ -13706,6 +13843,12 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 /usr/local/include/boost/type_traits/is_member_function_pointer.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
+
+/usr/include/fcntl.h:
+
+/usr/include/x86_64-linux-gnu/bits/uio-ext.h:
+
+/usr/include/x86_64-linux-gnu/sys/poll.h:
 
 /usr/local/include/boost/asio/basic_socket_iostream.hpp:
 
@@ -13742,8 +13885,6 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 /usr/local/include/boost/predef/library/std/libcomo.h:
 
 /usr/local/include/boost/system/detail/std_category.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
 
 /usr/include/nlohmann/detail/abi_macros.hpp:
 
@@ -13837,6 +13978,52 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 
 /usr/include/nlohmann/detail/output/binary_writer.hpp:
 
+/usr/include/c++/13/ext/alloc_traits.h:
+
+/usr/include/x86_64-linux-gnu/bits/uio_lim.h:
+
+/usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
+
+/usr/local/include/boost/asio/cancellation_state.hpp:
+
+/usr/local/include/boost/predef/compiler/intel.h:
+
+/usr/local/include/boost/beast/http/buffer_body.hpp:
+
+/usr/include/x86_64-linux-gnu/sys/ttydefaults.h:
+
+/usr/local/include/boost/predef/compiler/clang.h:
+
+/usr/local/include/boost/system/detail/generic_category_message.hpp:
+
+/usr/local/include/boost/beast/http/status.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
+
+/usr/local/include/boost/io/ostream_put.hpp:
+
+/usr/include/x86_64-linux-gnu/sys/uio.h:
+
+/usr/local/include/boost/asio/write.hpp:
+
+/usr/local/include/boost/predef/compiler/sgi_mipspro.h:
+
+/usr/local/include/boost/smart_ptr/detail/shared_count.hpp:
+
+/usr/local/include/boost/beast/http/impl/verb.ipp:
+
+/usr/local/include/boost/predef/architecture/sparc.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h:
+
+/usr/local/include/boost/asio/any_io_executor.hpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/limits.h:
+
+/usr/local/include/boost/asio/associated_allocator.hpp:
+
+/usr/local/include/boost/asio/basic_streambuf_fwd.hpp:
+
 /usr/local/include/boost/preprocessor/list/reverse.hpp:
 
 /usr/local/include/boost/asio/buffer.hpp:
@@ -13900,6 +14087,8 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 /usr/local/include/boost/asio/detail/epoll_reactor.hpp:
 
 /usr/local/include/boost/core/noinit_adaptor.hpp:
+
+/usr/include/c++/13/bits/regex_scanner.h:
 
 /usr/local/include/boost/asio/execution/scheduler.hpp:
 
@@ -14001,6 +14190,8 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 
 /usr/local/include/boost/asio/detail/posix_global.hpp:
 
+/usr/include/c++/13/bits/regex_constants.h:
+
 /usr/local/include/boost/asio/detail/posix_mutex.hpp:
 
 /usr/local/include/boost/asio/detail/posix_signal_blocker.hpp:
@@ -14037,9 +14228,9 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 
 /usr/local/include/boost/asio/detail/reactive_socket_send_op.hpp:
 
-/usr/local/include/spdlog/details/null_mutex.h:
-
 /usr/local/include/boost/regex/v5/mem_block_cache.hpp:
+
+/usr/local/include/spdlog/details/null_mutex.h:
 
 /usr/local/include/boost/mp11/list.hpp:
 
@@ -14125,6 +14316,10 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 
 /usr/local/include/boost/asio/execution.hpp:
 
+/usr/local/include/boost/type_traits/has_trivial_assign.hpp:
+
+/usr/local/include/boost/beast/core/detail/variant.hpp:
+
 /usr/local/include/boost/asio/execution/allocator.hpp:
 
 /usr/local/include/boost/asio/execution/any_executor.hpp:
@@ -14195,8 +14390,6 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 
 /usr/local/include/boost/system/detail/config.hpp:
 
-/usr/local/include/boost/type_traits/has_pre_increment.hpp:
-
 /usr/local/include/boost/predef/compiler/visualc.h:
 
 /usr/include/asm-generic/bitsperlong.h:
@@ -14211,10 +14404,6 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 
 /usr/local/include/boost/asio/execution/prefer_only.hpp:
 
-/usr/include/x86_64-linux-gnu/asm/bitsperlong.h:
-
-/usr/local/include/boost/type_traits/has_plus.hpp:
-
 /usr/local/include/boost/predef/compiler/pgi.h:
 
 /usr/local/include/boost/asio/execution/receiver.hpp:
@@ -14227,8 +14416,6 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 
 /usr/local/include/boost/asio/execution_context.hpp:
 
-/usr/local/include/boost/type_traits/has_negate.hpp:
-
 /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
 
 /usr/local/include/boost/asio/handler_alloc_hook.hpp:
@@ -14238,14 +14425,6 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h:
 
 /usr/local/include/boost/asio/handler_continuation_hook.hpp:
-
-/usr/local/include/boost/beast/core/buffers_prefix.hpp:
-
-/usr/local/include/boost/asio/handler_invoke_hook.hpp:
-
-/usr/local/include/spdlog/tweakme.h:
-
-/usr/local/include/boost/system/errc.hpp:
 
 /usr/local/include/boost/asio/impl/cancellation_signal.ipp:
 
@@ -14288,6 +14467,8 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 /usr/local/include/boost/predef/library/std/modena.h:
 
 /usr/local/include/boost/type_traits/is_union.hpp:
+
+/usr/include/c++/13/bits/deque.tcc:
 
 /usr/local/include/boost/asio/query.hpp:
 
@@ -14417,12 +14598,6 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 
 /usr/local/include/boost/beast/core/detail/work_guard.hpp:
 
-/usr/local/include/boost/mpl/aux_/config/lambda.hpp:
-
-/usr/local/include/boost/asio/detail/reactor_op.hpp:
-
-/usr/local/include/boost/beast/core/file_posix.hpp:
-
 /usr/local/include/boost/mpl/bool_fwd.hpp:
 
 /usr/local/include/boost/beast/core/file_stdio.hpp:
@@ -14444,6 +14619,10 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 /usr/local/include/boost/beast/core/impl/file_posix.ipp:
 
 /usr/local/include/boost/beast/core/impl/flat_static_buffer.ipp:
+
+/usr/local/include/boost/type_traits/has_post_increment.hpp:
+
+/usr/local/include/boost/beast/core/impl/read_size.hpp:
 
 /usr/local/include/boost/predef/compiler/watcom.h:
 
@@ -14513,13 +14692,7 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 
 /usr/local/include/boost/beast/http/detail/chunk_encode.hpp:
 
-/usr/local/include/boost/beast/http/detail/rfc7230.ipp:
-
 /usr/local/include/boost/beast/http/detail/type_traits.hpp:
-
-/usr/local/include/boost/beast/core/detail/variant.hpp:
-
-/usr/local/include/boost/type_traits/has_trivial_assign.hpp:
 
 /usr/local/include/boost/beast/http/dynamic_body.hpp:
 
@@ -14538,8 +14711,6 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 /usr/local/include/boost/beast/http/impl/fields.ipp:
 
 /usr/local/include/boost/beast/http/impl/read.hpp:
-
-/usr/local/include/boost/type_traits/has_modulus.hpp:
 
 /usr/include/linux/version.h:
 
@@ -14610,6 +14781,10 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 /usr/local/include/boost/regex/v5/cpp_regex_traits.hpp:
 
 /usr/local/include/boost/none.hpp:
+
+/usr/local/include/boost/type_traits/has_plus_assign.hpp:
+
+/usr/local/include/boost/intrusive/detail/equal_to_value.hpp:
 
 /usr/local/include/boost/intrusive/detail/function_detector.hpp:
 
@@ -14689,9 +14864,9 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 
 /usr/local/include/boost/preprocessor/list/detail/fold_right.hpp:
 
-/usr/include/x86_64-linux-gnu/sys/eventfd.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
+
+/usr/include/x86_64-linux-gnu/sys/eventfd.h:
 
 /usr/local/include/boost/move/detail/reverse_iterator.hpp:
 
@@ -14700,6 +14875,8 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 /usr/local/include/boost/asio/impl/any_io_executor.ipp:
 
 /usr/local/include/boost/move/detail/to_raw_pointer.hpp:
+
+/usr/include/c++/13/bits/regex_error.h:
 
 /usr/local/include/boost/move/traits.hpp:
 
@@ -14728,8 +14905,6 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 /usr/local/include/boost/type_traits/detail/has_binary_operator.hpp:
 
 /usr/local/include/boost/mp11/function.hpp:
-
-/usr/local/include/boost/type_traits/has_modulus_assign.hpp:
 
 /usr/local/include/boost/predef/os/bsd/dragonfly.h:
 
@@ -14798,8 +14973,6 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 /usr/local/include/boost/system/system_category.hpp:
 
 /usr/local/include/boost/system/system_error.hpp:
-
-/usr/local/include/boost/type.hpp:
 
 /usr/local/include/boost/type_traits/add_cv.hpp:
 
@@ -14881,8 +15054,6 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 
 /usr/local/include/boost/type_traits/has_less_equal.hpp:
 
-/usr/local/include/boost/type_traits/has_logical_and.hpp:
-
 /usr/local/include/boost/preprocessor/array/size.hpp:
 
 /usr/local/include/boost/type_traits/has_logical_or.hpp:
@@ -14890,37 +15061,3 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 /usr/include/openssl/params.h:
 
 /usr/local/include/boost/type_traits/has_minus.hpp:
-
-/usr/local/include/boost/type_traits/has_multiplies_assign.hpp:
-
-/usr/local/include/boost/regex/v5/perl_matcher.hpp:
-
-/usr/local/include/boost/type_traits/has_nothrow_assign.hpp:
-
-/usr/local/include/boost/utility/compare_pointees.hpp:
-
-/usr/local/include/boost/type_traits/has_nothrow_constructor.hpp:
-
-/usr/local/include/boost/type_traits/has_nothrow_copy.hpp:
-
-/usr/local/include/boost/intrusive/detail/equal_to_value.hpp:
-
-/usr/local/include/boost/type_traits/has_plus_assign.hpp:
-
-/usr/local/include/boost/type_traits/has_post_decrement.hpp:
-
-/usr/local/include/boost/beast/core/impl/read_size.hpp:
-
-/usr/local/include/boost/type_traits/has_post_increment.hpp:
-
-/usr/local/include/boost/type_traits/has_pre_decrement.hpp:
-
-/usr/local/include/boost/type_traits/has_right_shift_assign.hpp:
-
-/usr/include/c++/13/tr1/exp_integral.tcc:
-
-/usr/local/include/boost/type_traits/has_trivial_destructor.hpp:
-
-/usr/local/include/boost/type_traits/remove_bounds.hpp:
-
-/usr/local/include/boost/type_traits/has_unary_minus.hpp:

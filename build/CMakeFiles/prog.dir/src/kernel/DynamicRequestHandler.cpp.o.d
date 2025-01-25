@@ -993,4 +993,73 @@ CMakeFiles/prog.dir/src/kernel/DynamicRequestHandler.cpp.o: \
  /usr/local/include/boost/asio/completion_condition.hpp \
  /usr/local/include/boost/asio/detail/base_from_completion_cond.hpp \
  /usr/local/include/boost/asio/detail/consuming_buffers.hpp \
- /usr/local/include/boost/asio/detail/dependent_type.hpp
+ /usr/local/include/boost/asio/detail/dependent_type.hpp \
+ /usr/local/include/spdlog/spdlog.h /usr/local/include/spdlog/common.h \
+ /usr/local/include/spdlog/details/null_mutex.h \
+ /usr/local/include/spdlog/tweakme.h /usr/local/include/spdlog/fmt/fmt.h \
+ /usr/local/include/spdlog/fmt/bundled/core.h \
+ /usr/local/include/spdlog/fmt/bundled/format.h \
+ /usr/local/include/spdlog/fmt/bundled/base.h \
+ /usr/local/include/spdlog/fmt/bundled/format-inl.h \
+ /usr/include/c++/13/locale \
+ /usr/include/c++/13/bits/locale_facets_nonio.h \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/time_members.h \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/messages_members.h \
+ /usr/include/libintl.h /usr/include/c++/13/bits/codecvt.h \
+ /usr/include/c++/13/bits/locale_facets_nonio.tcc \
+ /usr/include/c++/13/bits/locale_conv.h \
+ /usr/local/include/spdlog/fmt/bundled/format.h \
+ /usr/local/include/spdlog/common-inl.h \
+ /usr/local/include/spdlog/details/registry.h \
+ /usr/local/include/spdlog/details/periodic_worker.h \
+ /usr/include/c++/13/condition_variable \
+ /usr/include/c++/13/bits/std_mutex.h \
+ /usr/include/c++/13/bits/unique_lock.h /usr/include/c++/13/mutex \
+ /usr/include/c++/13/thread /usr/include/c++/13/bits/std_thread.h \
+ /usr/include/c++/13/bits/this_thread_sleep.h \
+ /usr/local/include/spdlog/details/periodic_worker-inl.h \
+ /usr/local/include/spdlog/details/registry-inl.h \
+ /usr/local/include/spdlog/logger.h \
+ /usr/local/include/spdlog/details/backtracer.h \
+ /usr/local/include/spdlog/details/circular_q.h \
+ /usr/local/include/spdlog/details/log_msg_buffer.h \
+ /usr/local/include/spdlog/details/log_msg.h \
+ /usr/local/include/spdlog/details/log_msg-inl.h \
+ /usr/local/include/spdlog/details/os.h \
+ /usr/local/include/spdlog/details/os-inl.h \
+ /usr/include/x86_64-linux-gnu/sys/syscall.h \
+ /usr/include/x86_64-linux-gnu/asm/unistd.h \
+ /usr/include/x86_64-linux-gnu/asm/unistd_64.h \
+ /usr/include/x86_64-linux-gnu/bits/syscall.h \
+ /usr/local/include/spdlog/details/log_msg_buffer-inl.h \
+ /usr/local/include/spdlog/details/backtracer-inl.h \
+ /usr/local/include/spdlog/logger-inl.h \
+ /usr/local/include/spdlog/pattern_formatter.h \
+ /usr/local/include/spdlog/formatter.h \
+ /usr/local/include/spdlog/pattern_formatter-inl.h \
+ /usr/local/include/spdlog/details/fmt_helper.h \
+ /usr/local/include/spdlog/mdc.h /usr/include/c++/13/map \
+ /usr/include/c++/13/bits/stl_tree.h /usr/include/c++/13/bits/stl_map.h \
+ /usr/include/c++/13/bits/stl_multimap.h \
+ /usr/local/include/spdlog/sinks/sink.h \
+ /usr/local/include/spdlog/sinks/sink-inl.h \
+ /usr/local/include/spdlog/sinks/ansicolor_sink.h \
+ /usr/local/include/spdlog/details/console_globals.h \
+ /usr/local/include/spdlog/sinks/ansicolor_sink-inl.h \
+ /usr/local/include/spdlog/details/synchronous_factory.h \
+ /usr/local/include/spdlog/version.h \
+ /usr/local/include/spdlog/spdlog-inl.h /usr/include/c++/13/regex \
+ /usr/include/c++/13/bitset /usr/include/c++/13/stack \
+ /usr/include/c++/13/deque /usr/include/c++/13/bits/stl_deque.h \
+ /usr/include/c++/13/bits/deque.tcc /usr/include/c++/13/bits/stl_stack.h \
+ /usr/include/c++/13/bits/regex_constants.h \
+ /usr/include/c++/13/bits/regex_error.h \
+ /usr/include/c++/13/bits/regex_automaton.h \
+ /usr/include/c++/13/bits/regex_automaton.tcc \
+ /usr/include/c++/13/bits/regex_scanner.h \
+ /usr/include/c++/13/bits/regex_scanner.tcc \
+ /usr/include/c++/13/bits/regex_compiler.h \
+ /usr/include/c++/13/bits/regex_compiler.tcc \
+ /usr/include/c++/13/bits/regex.h /usr/include/c++/13/bits/regex.tcc \
+ /usr/include/c++/13/bits/regex_executor.h \
+ /usr/include/c++/13/bits/regex_executor.tcc

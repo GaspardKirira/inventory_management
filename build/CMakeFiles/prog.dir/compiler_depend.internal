@@ -469,10 +469,12 @@ CMakeFiles/prog.dir/src/kernel/DynamicRequestHandler.cpp.o
  /usr/include/c++/13/bits/char_traits.h
  /usr/include/c++/13/bits/charconv.h
  /usr/include/c++/13/bits/chrono.h
+ /usr/include/c++/13/bits/codecvt.h
  /usr/include/c++/13/bits/concept_check.h
  /usr/include/c++/13/bits/cpp_type_traits.h
  /usr/include/c++/13/bits/cxxabi_forced.h
  /usr/include/c++/13/bits/cxxabi_init_exception.h
+ /usr/include/c++/13/bits/deque.tcc
  /usr/include/c++/13/bits/enable_special_members.h
  /usr/include/c++/13/bits/erase_if.h
  /usr/include/c++/13/bits/exception.h
@@ -488,8 +490,11 @@ CMakeFiles/prog.dir/src/kernel/DynamicRequestHandler.cpp.o
  /usr/include/c++/13/bits/istream.tcc
  /usr/include/c++/13/bits/locale_classes.h
  /usr/include/c++/13/bits/locale_classes.tcc
+ /usr/include/c++/13/bits/locale_conv.h
  /usr/include/c++/13/bits/locale_facets.h
  /usr/include/c++/13/bits/locale_facets.tcc
+ /usr/include/c++/13/bits/locale_facets_nonio.h
+ /usr/include/c++/13/bits/locale_facets_nonio.tcc
  /usr/include/c++/13/bits/localefwd.h
  /usr/include/c++/13/bits/memory_resource.h
  /usr/include/c++/13/bits/memoryfwd.h
@@ -505,6 +510,18 @@ CMakeFiles/prog.dir/src/kernel/DynamicRequestHandler.cpp.o
  /usr/include/c++/13/bits/ptr_traits.h
  /usr/include/c++/13/bits/range_access.h
  /usr/include/c++/13/bits/refwrap.h
+ /usr/include/c++/13/bits/regex.h
+ /usr/include/c++/13/bits/regex.tcc
+ /usr/include/c++/13/bits/regex_automaton.h
+ /usr/include/c++/13/bits/regex_automaton.tcc
+ /usr/include/c++/13/bits/regex_compiler.h
+ /usr/include/c++/13/bits/regex_compiler.tcc
+ /usr/include/c++/13/bits/regex_constants.h
+ /usr/include/c++/13/bits/regex_error.h
+ /usr/include/c++/13/bits/regex_executor.h
+ /usr/include/c++/13/bits/regex_executor.tcc
+ /usr/include/c++/13/bits/regex_scanner.h
+ /usr/include/c++/13/bits/regex_scanner.tcc
  /usr/include/c++/13/bits/requires_hosted.h
  /usr/include/c++/13/bits/shared_ptr.h
  /usr/include/c++/13/bits/shared_ptr_atomic.h
@@ -513,19 +530,26 @@ CMakeFiles/prog.dir/src/kernel/DynamicRequestHandler.cpp.o
  /usr/include/c++/13/bits/sstream.tcc
  /usr/include/c++/13/bits/std_abs.h
  /usr/include/c++/13/bits/std_function.h
+ /usr/include/c++/13/bits/std_mutex.h
+ /usr/include/c++/13/bits/std_thread.h
  /usr/include/c++/13/bits/stl_algo.h
  /usr/include/c++/13/bits/stl_algobase.h
  /usr/include/c++/13/bits/stl_bvector.h
  /usr/include/c++/13/bits/stl_construct.h
+ /usr/include/c++/13/bits/stl_deque.h
  /usr/include/c++/13/bits/stl_function.h
  /usr/include/c++/13/bits/stl_heap.h
  /usr/include/c++/13/bits/stl_iterator.h
  /usr/include/c++/13/bits/stl_iterator_base_funcs.h
  /usr/include/c++/13/bits/stl_iterator_base_types.h
+ /usr/include/c++/13/bits/stl_map.h
+ /usr/include/c++/13/bits/stl_multimap.h
  /usr/include/c++/13/bits/stl_pair.h
  /usr/include/c++/13/bits/stl_raw_storage_iter.h
  /usr/include/c++/13/bits/stl_relops.h
+ /usr/include/c++/13/bits/stl_stack.h
  /usr/include/c++/13/bits/stl_tempbuf.h
+ /usr/include/c++/13/bits/stl_tree.h
  /usr/include/c++/13/bits/stl_uninitialized.h
  /usr/include/c++/13/bits/stl_vector.h
  /usr/include/c++/13/bits/stream_iterator.h
@@ -533,13 +557,16 @@ CMakeFiles/prog.dir/src/kernel/DynamicRequestHandler.cpp.o
  /usr/include/c++/13/bits/streambuf_iterator.h
  /usr/include/c++/13/bits/string_view.tcc
  /usr/include/c++/13/bits/stringfwd.h
+ /usr/include/c++/13/bits/this_thread_sleep.h
  /usr/include/c++/13/bits/uniform_int_dist.h
+ /usr/include/c++/13/bits/unique_lock.h
  /usr/include/c++/13/bits/unique_ptr.h
  /usr/include/c++/13/bits/unordered_map.h
  /usr/include/c++/13/bits/uses_allocator.h
  /usr/include/c++/13/bits/uses_allocator_args.h
  /usr/include/c++/13/bits/utility.h
  /usr/include/c++/13/bits/vector.tcc
+ /usr/include/c++/13/bitset
  /usr/include/c++/13/cassert
  /usr/include/c++/13/cctype
  /usr/include/c++/13/cerrno
@@ -549,6 +576,7 @@ CMakeFiles/prog.dir/src/kernel/DynamicRequestHandler.cpp.o
  /usr/include/c++/13/cmath
  /usr/include/c++/13/compare
  /usr/include/c++/13/complex
+ /usr/include/c++/13/condition_variable
  /usr/include/c++/13/csignal
  /usr/include/c++/13/cstdarg
  /usr/include/c++/13/cstddef
@@ -561,6 +589,7 @@ CMakeFiles/prog.dir/src/kernel/DynamicRequestHandler.cpp.o
  /usr/include/c++/13/cwctype
  /usr/include/c++/13/debug/assertions.h
  /usr/include/c++/13/debug/debug.h
+ /usr/include/c++/13/deque
  /usr/include/c++/13/exception
  /usr/include/c++/13/ext/aligned_buffer.h
  /usr/include/c++/13/ext/alloc_traits.h
@@ -576,7 +605,10 @@ CMakeFiles/prog.dir/src/kernel/DynamicRequestHandler.cpp.o
  /usr/include/c++/13/istream
  /usr/include/c++/13/iterator
  /usr/include/c++/13/limits
+ /usr/include/c++/13/locale
+ /usr/include/c++/13/map
  /usr/include/c++/13/memory
+ /usr/include/c++/13/mutex
  /usr/include/c++/13/new
  /usr/include/c++/13/ostream
  /usr/include/c++/13/pstl/execution_defs.h
@@ -584,12 +616,15 @@ CMakeFiles/prog.dir/src/kernel/DynamicRequestHandler.cpp.o
  /usr/include/c++/13/pstl/glue_memory_defs.h
  /usr/include/c++/13/pstl/pstl_config.h
  /usr/include/c++/13/ratio
+ /usr/include/c++/13/regex
  /usr/include/c++/13/sstream
+ /usr/include/c++/13/stack
  /usr/include/c++/13/stdexcept
  /usr/include/c++/13/streambuf
  /usr/include/c++/13/string
  /usr/include/c++/13/string_view
  /usr/include/c++/13/system_error
+ /usr/include/c++/13/thread
  /usr/include/c++/13/tr1/bessel_function.tcc
  /usr/include/c++/13/tr1/beta_function.tcc
  /usr/include/c++/13/tr1/ell_integral.tcc
@@ -615,6 +650,7 @@ CMakeFiles/prog.dir/src/kernel/DynamicRequestHandler.cpp.o
  /usr/include/fcntl.h
  /usr/include/features-time64.h
  /usr/include/features.h
+ /usr/include/libintl.h
  /usr/include/limits.h
  /usr/include/linux/close_range.h
  /usr/include/linux/errno.h
@@ -656,6 +692,8 @@ CMakeFiles/prog.dir/src/kernel/DynamicRequestHandler.cpp.o
  /usr/include/x86_64-linux-gnu/asm/socket.h
  /usr/include/x86_64-linux-gnu/asm/sockios.h
  /usr/include/x86_64-linux-gnu/asm/types.h
+ /usr/include/x86_64-linux-gnu/asm/unistd.h
+ /usr/include/x86_64-linux-gnu/asm/unistd_64.h
  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h
  /usr/include/x86_64-linux-gnu/bits/byteswap.h
  /usr/include/x86_64-linux-gnu/bits/confname.h
@@ -726,6 +764,7 @@ CMakeFiles/prog.dir/src/kernel/DynamicRequestHandler.cpp.o
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h
  /usr/include/x86_64-linux-gnu/bits/struct_stat.h
+ /usr/include/x86_64-linux-gnu/bits/syscall.h
  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h
  /usr/include/x86_64-linux-gnu/bits/time.h
  /usr/include/x86_64-linux-gnu/bits/time64.h
@@ -789,7 +828,9 @@ CMakeFiles/prog.dir/src/kernel/DynamicRequestHandler.cpp.o
  /usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h
  /usr/include/x86_64-linux-gnu/c++/13/bits/gthr-default.h
  /usr/include/x86_64-linux-gnu/c++/13/bits/gthr.h
+ /usr/include/x86_64-linux-gnu/c++/13/bits/messages_members.h
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h
+ /usr/include/x86_64-linux-gnu/c++/13/bits/time_members.h
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h
  /usr/include/x86_64-linux-gnu/gnu/stubs.h
  /usr/include/x86_64-linux-gnu/sys/cdefs.h
@@ -801,6 +842,7 @@ CMakeFiles/prog.dir/src/kernel/DynamicRequestHandler.cpp.o
  /usr/include/x86_64-linux-gnu/sys/single_threaded.h
  /usr/include/x86_64-linux-gnu/sys/socket.h
  /usr/include/x86_64-linux-gnu/sys/stat.h
+ /usr/include/x86_64-linux-gnu/sys/syscall.h
  /usr/include/x86_64-linux-gnu/sys/timerfd.h
  /usr/include/x86_64-linux-gnu/sys/ttydefaults.h
  /usr/include/x86_64-linux-gnu/sys/types.h
@@ -1491,6 +1533,44 @@ CMakeFiles/prog.dir/src/kernel/DynamicRequestHandler.cpp.o
  /usr/local/include/boost/utility/string_view.hpp
  /usr/local/include/boost/utility/string_view_fwd.hpp
  /usr/local/include/boost/version.hpp
+ /usr/local/include/spdlog/common-inl.h
+ /usr/local/include/spdlog/common.h
+ /usr/local/include/spdlog/details/backtracer-inl.h
+ /usr/local/include/spdlog/details/backtracer.h
+ /usr/local/include/spdlog/details/circular_q.h
+ /usr/local/include/spdlog/details/console_globals.h
+ /usr/local/include/spdlog/details/fmt_helper.h
+ /usr/local/include/spdlog/details/log_msg-inl.h
+ /usr/local/include/spdlog/details/log_msg.h
+ /usr/local/include/spdlog/details/log_msg_buffer-inl.h
+ /usr/local/include/spdlog/details/log_msg_buffer.h
+ /usr/local/include/spdlog/details/null_mutex.h
+ /usr/local/include/spdlog/details/os-inl.h
+ /usr/local/include/spdlog/details/os.h
+ /usr/local/include/spdlog/details/periodic_worker-inl.h
+ /usr/local/include/spdlog/details/periodic_worker.h
+ /usr/local/include/spdlog/details/registry-inl.h
+ /usr/local/include/spdlog/details/registry.h
+ /usr/local/include/spdlog/details/synchronous_factory.h
+ /usr/local/include/spdlog/fmt/bundled/base.h
+ /usr/local/include/spdlog/fmt/bundled/core.h
+ /usr/local/include/spdlog/fmt/bundled/format-inl.h
+ /usr/local/include/spdlog/fmt/bundled/format.h
+ /usr/local/include/spdlog/fmt/fmt.h
+ /usr/local/include/spdlog/formatter.h
+ /usr/local/include/spdlog/logger-inl.h
+ /usr/local/include/spdlog/logger.h
+ /usr/local/include/spdlog/mdc.h
+ /usr/local/include/spdlog/pattern_formatter-inl.h
+ /usr/local/include/spdlog/pattern_formatter.h
+ /usr/local/include/spdlog/sinks/ansicolor_sink-inl.h
+ /usr/local/include/spdlog/sinks/ansicolor_sink.h
+ /usr/local/include/spdlog/sinks/sink-inl.h
+ /usr/local/include/spdlog/sinks/sink.h
+ /usr/local/include/spdlog/spdlog-inl.h
+ /usr/local/include/spdlog/spdlog.h
+ /usr/local/include/spdlog/tweakme.h
+ /usr/local/include/spdlog/version.h
 
 CMakeFiles/prog.dir/src/kernel/HTTPServer.cpp.o
  /home/softadastra/Documents/cpp/softadastra/src/kernel/HTTPServer.cpp
@@ -4833,6 +4913,7 @@ CMakeFiles/prog.dir/src/kernel/Router.cpp.o
  /usr/include/c++/13/bits/cpp_type_traits.h
  /usr/include/c++/13/bits/cxxabi_forced.h
  /usr/include/c++/13/bits/cxxabi_init_exception.h
+ /usr/include/c++/13/bits/deque.tcc
  /usr/include/c++/13/bits/enable_special_members.h
  /usr/include/c++/13/bits/erase_if.h
  /usr/include/c++/13/bits/exception.h
@@ -4881,6 +4962,18 @@ CMakeFiles/prog.dir/src/kernel/Router.cpp.o
  /usr/include/c++/13/bits/quoted_string.h
  /usr/include/c++/13/bits/range_access.h
  /usr/include/c++/13/bits/refwrap.h
+ /usr/include/c++/13/bits/regex.h
+ /usr/include/c++/13/bits/regex.tcc
+ /usr/include/c++/13/bits/regex_automaton.h
+ /usr/include/c++/13/bits/regex_automaton.tcc
+ /usr/include/c++/13/bits/regex_compiler.h
+ /usr/include/c++/13/bits/regex_compiler.tcc
+ /usr/include/c++/13/bits/regex_constants.h
+ /usr/include/c++/13/bits/regex_error.h
+ /usr/include/c++/13/bits/regex_executor.h
+ /usr/include/c++/13/bits/regex_executor.tcc
+ /usr/include/c++/13/bits/regex_scanner.h
+ /usr/include/c++/13/bits/regex_scanner.tcc
  /usr/include/c++/13/bits/requires_hosted.h
  /usr/include/c++/13/bits/shared_ptr.h
  /usr/include/c++/13/bits/shared_ptr_atomic.h
@@ -4896,6 +4989,7 @@ CMakeFiles/prog.dir/src/kernel/Router.cpp.o
  /usr/include/c++/13/bits/stl_algobase.h
  /usr/include/c++/13/bits/stl_bvector.h
  /usr/include/c++/13/bits/stl_construct.h
+ /usr/include/c++/13/bits/stl_deque.h
  /usr/include/c++/13/bits/stl_function.h
  /usr/include/c++/13/bits/stl_heap.h
  /usr/include/c++/13/bits/stl_iterator.h
@@ -4910,6 +5004,7 @@ CMakeFiles/prog.dir/src/kernel/Router.cpp.o
  /usr/include/c++/13/bits/stl_raw_storage_iter.h
  /usr/include/c++/13/bits/stl_relops.h
  /usr/include/c++/13/bits/stl_set.h
+ /usr/include/c++/13/bits/stl_stack.h
  /usr/include/c++/13/bits/stl_tempbuf.h
  /usr/include/c++/13/bits/stl_tree.h
  /usr/include/c++/13/bits/stl_uninitialized.h
@@ -4932,6 +5027,7 @@ CMakeFiles/prog.dir/src/kernel/Router.cpp.o
  /usr/include/c++/13/bits/valarray_array.tcc
  /usr/include/c++/13/bits/valarray_before.h
  /usr/include/c++/13/bits/vector.tcc
+ /usr/include/c++/13/bitset
  /usr/include/c++/13/cassert
  /usr/include/c++/13/cctype
  /usr/include/c++/13/cerrno
@@ -4955,6 +5051,7 @@ CMakeFiles/prog.dir/src/kernel/Router.cpp.o
  /usr/include/c++/13/cwctype
  /usr/include/c++/13/debug/assertions.h
  /usr/include/c++/13/debug/debug.h
+ /usr/include/c++/13/deque
  /usr/include/c++/13/exception
  /usr/include/c++/13/ext/aligned_buffer.h
  /usr/include/c++/13/ext/alloc_traits.h
@@ -4989,8 +5086,10 @@ CMakeFiles/prog.dir/src/kernel/Router.cpp.o
  /usr/include/c++/13/pstl/glue_numeric_defs.h
  /usr/include/c++/13/pstl/pstl_config.h
  /usr/include/c++/13/ratio
+ /usr/include/c++/13/regex
  /usr/include/c++/13/set
  /usr/include/c++/13/sstream
+ /usr/include/c++/13/stack
  /usr/include/c++/13/stdexcept
  /usr/include/c++/13/streambuf
  /usr/include/c++/13/string
