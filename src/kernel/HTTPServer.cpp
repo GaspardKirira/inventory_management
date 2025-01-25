@@ -31,17 +31,43 @@ void Softadastra::HTTPServer::run()
                                  res.body() = json{{"message", "User details for id: " + user_id}}.dump();
                              })));
 
-    // Ajouter une route pour "/products/{slug}"
+    // Route pour "/products/{id}" : attend un entier
+    router.add_route(http::verb::get, "/products/{id}",
+                     std::static_pointer_cast<IRequestHandler>(
+                         std::make_shared<DynamicRequestHandler>(
+                             [](const std::unordered_map<std::string, std::string> &params,
+                                http::response<http::string_body> &res)
+                             {
+                                 try
+                                 {
+                                     std::string product_id = params.at("id"); // Assure-toi que 'id' est fourni
+                                     res.result(http::status::ok);
+                                     res.set(http::field::content_type, "application/json");
+                                     res.body() = json{{"message", "Product details for id: " + product_id}}.dump();
+                                 }
+                                 catch (const std::out_of_range &e)
+                                 {
+                                     throw std::invalid_argument("Missing required parameter: 'id'");
+                                 }
+                             })));
+
     router.add_route(http::verb::get, "/products/{slug}",
                      std::static_pointer_cast<IRequestHandler>(
                          std::make_shared<DynamicRequestHandler>(
                              [](const std::unordered_map<std::string, std::string> &params,
                                 http::response<http::string_body> &res)
                              {
-                                 std::string product_slug = params.at("slug");
-                                 res.result(http::status::ok);
-                                 res.set(http::field::content_type, "application/json");
-                                 res.body() = json{{"message", "Product details for slug: " + product_slug}}.dump();
+                                 try
+                                 {
+                                     std::string product_slug = params.at("slug"); // Assure-toi que 'slug' est fourni
+                                     res.result(http::status::ok);
+                                     res.set(http::field::content_type, "application/json");
+                                     res.body() = json{{"message", "Product details for slug: " + product_slug}}.dump();
+                                 }
+                                 catch (const std::out_of_range &e)
+                                 {
+                                     throw std::invalid_argument("Missing required parameter: 'slug'");
+                                 }
                              })));
 
     spdlog::info("Server started on port {}", config_.getServerPort());

@@ -14,36 +14,30 @@ Softadastra::DynamicRequestHandler::DynamicRequestHandler(
 void Softadastra::DynamicRequestHandler::handle_request(const http::request<http::string_body> &,
                                                         http::response<http::string_body> &res)
 {
-    spdlog::info("Handling request with parameters...");
-
-    // Vérification de la présence du paramètre "id"
-    auto id_it = params_.find("id");
-    if (id_it != params_.end())
+    spdlog::info("Handling request with parameters: {}", params_.empty() ? "None" : "Available");
+    // Vérifier si handler_ est valide avant de l'utiliser
+    if (handler_)
     {
-        spdlog::info("Parameter 'id' found: {}", id_it->second);
+        handler_(params_, res); // Utiliser params_ pour l'accès aux paramètres dynamiques
     }
     else
     {
-        spdlog::warn("Parameter 'id' not found.");
+        spdlog::error("Handler is invalid or null.");
+        // Retourner une erreur ou prendre d'autres mesures selon ton design
+        res.result(http::status::internal_server_error);
+        res.body() = "Internal server error: handler is invalid.";
     }
-
-    handler_(params_, res);
 }
 
-void Softadastra::DynamicRequestHandler::set_params(
-    const std::unordered_map<std::string, std::string> &params)
+void Softadastra::DynamicRequestHandler::set_params(const std::unordered_map<std::string, std::string> &params)
 {
-    spdlog::info("Setting parameters in DynamicRequestHandler...");
+    spdlog::info("Validating and setting parameters in DynamicRequestHandler...");
 
-    // Vérification de tous les paramètres fournis
-    for (const auto &param : params)
+    // Validation des paramètres dynamiques
+    for (const auto &[key, value] : params)
     {
-        const std::string &key = param.first;
-        const std::string &value = param.second;
-
         if (key == "id")
         {
-            // Valider que 'id' est un entier positif
             if (!std::regex_match(value, std::regex("^[0-9]+$")))
             {
                 spdlog::warn("Invalid 'id' parameter: {}", value);
@@ -52,15 +46,18 @@ void Softadastra::DynamicRequestHandler::set_params(
         }
         else if (key == "slug")
         {
-            // Valider que 'slug' ne contient pas de caractères spéciaux
             if (!std::regex_match(value, std::regex("^[a-zA-Z0-9_-]+$")))
             {
                 spdlog::warn("Invalid 'slug' parameter: {}", value);
-                throw std::invalid_argument("Invalid parameter value for 'slug'. Must be alphanumeric.");
+                throw std::invalid_argument("Invalid parameter value for 'slug'. Must be alphanumeric with hyphens or underscores.");
             }
+        }
+        else
+        {
+            spdlog::warn("Unknown parameter: {}", key);
         }
     }
 
-    params_ = params; // Mise à jour des paramètres
-    spdlog::info("Parameters set successfully.");
+    params_ = params; // Mise à jour des paramètres après validation
+    spdlog::info("Parameters set successfully: {}", params.size());
 }

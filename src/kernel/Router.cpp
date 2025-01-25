@@ -1,5 +1,6 @@
 #include "DynamicRequestHandler.hpp"
 #include "Router.hpp"
+#include <regex>
 
 void Softadastra::Router::add_route(http::verb method, const std::string &route, std::shared_ptr<IRequestHandler> handler)
 {
@@ -34,25 +35,69 @@ bool Softadastra::Router::handle_request(const http::request<http::string_body> 
     return false;
 }
 
+std::string Softadastra::Router::map_to_string(const std::unordered_map<std::string, std::string> &map)
+{
+    std::ostringstream oss;
+    oss << "{ ";
+    for (const auto &[key, value] : map)
+    {
+        oss << key << ": " << value << ", ";
+    }
+    std::string result = oss.str();
+    if (!map.empty())
+    {
+        result.pop_back(); // Supprime la dernière virgule
+        result.pop_back(); // Supprime l'espace
+    }
+    result += " }";
+    return result;
+}
+
 bool Softadastra::Router::matches_dynamic_route(const std::string &route_pattern, const std::string &path, std::shared_ptr<IRequestHandler> handler, http::response<http::string_body> &res)
 {
     std::string regex_pattern = convert_route_to_regex(route_pattern);
+    spdlog::info("Converted route pattern: {}", regex_pattern);
+
     boost::regex dynamic_route(regex_pattern);
     boost::smatch match;
 
     if (boost::regex_match(path, match, dynamic_route))
     {
+        spdlog::info("Path '{}' matches route pattern '{}'", path, route_pattern);
+
         std::unordered_map<std::string, std::string> params;
-        params["id"] = match[1].str(); // Utilisation de "id" comme clé
 
-        // Mettre à jour les paramètres dans le gestionnaire de route dynamique
+        // Extraire les noms des paramètres
+        size_t start = 0;
+        while ((start = route_pattern.find('{', start)) != std::string::npos)
+        {
+            size_t end = route_pattern.find('}', start);
+            if (end != std::string::npos)
+            {
+                std::string param_name = route_pattern.substr(start + 1, end - start - 1);
+                params[param_name] = match[params.size() + 1].str(); // Associer à la valeur capturée
+                start = end + 1;
+            }
+        }
+
+        spdlog::info("Extracted parameters: {}", map_to_string(params));
+
+        // Validation des paramètres
+        for (const auto &[key, value] : params)
+        {
+            if (key == "id" && !std::regex_match(value, std::regex("^[0-9]+$")))
+            {
+                spdlog::warn("Invalid 'id' parameter: {}", value);
+                throw std::invalid_argument("Invalid parameter value for 'id'. Must be a positive integer.");
+            }
+        }
+
         dynamic_cast<DynamicRequestHandler *>(handler.get())->set_params(params);
-
-        res.set(http::field::content_type, "application/json");
-        res.body() = json{{"message", "Dynamic route matched."}, {"params", params}}.dump();
-
+        handler->handle_request({}, res); // Passer une requête vide si besoin
         return true;
     }
+
+    spdlog::info("Path '{}' does not match route pattern '{}'", path, route_pattern);
     return false;
 }
 
@@ -60,47 +105,41 @@ std::string Softadastra::Router::convert_route_to_regex(const std::string &route
 {
     std::string regex = "^";
     bool inside_placeholder = false;
+    std::string param_name;
 
     for (size_t i = 0; i < route.size(); ++i)
     {
-        if (route[i] == '{') // Début du paramètre dynamique
+        char c = route[i];
+        if (c == '{')
         {
             inside_placeholder = true;
-            regex += "(\\w+)"; // Capture un mot comme paramètre
+            param_name.clear();
+            regex += "("; // Début du paramètre dynamique
         }
-        else if (route[i] == '}') // Fin du paramètre dynamique
+        else if (c == '}')
         {
             inside_placeholder = false;
+            regex += "[^/]+)"; // Capture une partie de l'URL jusqu'au prochain "/"
         }
         else
         {
-            // Si nous sommes à l'intérieur d'un paramètre dynamique, on applique une logique spécifique
             if (inside_placeholder)
             {
-                // Par exemple, si le caractère suivant est un '/', on permet cela
-                if (route[i] == '/')
-                {
-                    regex += "\\/"; // Ajouter un / dans le regex
-                }
-                // Si le caractère suivant est un '-', on le permet aussi
-                else if (route[i] == '-')
-                {
-                    regex += "\\-"; // Ajouter un - dans le regex
-                }
-                else
-                {
-                    // Si c'est un autre caractère, on ignore cette partie ou on pourrait lancer une exception
-                    std::cerr << "Caractère invalide après un paramètre dynamique : " << route[i] << std::endl;
-                }
+                param_name += c; // Construire le nom du paramètre (optionnel, à utiliser si besoin)
             }
             else
             {
-                // Hors des paramètres dynamiques, ajoute simplement le caractère à la regex
-                regex += route[i];
+                if (c == '/')
+                {
+                    regex += "\\/";
+                }
+                else
+                {
+                    regex += c;
+                }
             }
         }
     }
-
     regex += "$"; // Fin de l'URL
     return regex;
 }

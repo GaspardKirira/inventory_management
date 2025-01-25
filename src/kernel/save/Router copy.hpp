@@ -120,7 +120,10 @@ namespace Softadastra
          * Les routes sont stockées sous forme d'un map, avec une clé composée de la méthode HTTP (GET, POST, etc.) et de l'URL, et une valeur associée au gestionnaire de requêtes.
          */
         std::unordered_map<RouteKey, std::shared_ptr<IRequestHandler>, PairHash> routes_;
-        std::string map_to_string(const std::unordered_map<std::string, std::string> &map);
+
+        bool validate_params(const std::unordered_map<std::string, std::string> &params,
+                             http::response<http::string_body> &res);
+
     };
 };
 
