@@ -14,11 +14,10 @@ class User
 {
 public:
     User(const std::string &full_name,
-         const std::shared_ptr<Softadastra::Company> &company = nullptr,
-         const std::shared_ptr<Softadastra::Email> &email = nullptr,
-         const std::shared_ptr<Softadastra::Phone> &phone = nullptr,
-         const std::shared_ptr<Softadastra::Password> &password = nullptr,
-         const std::shared_ptr<Softadastra::Location> &location = nullptr);
+         const std::shared_ptr<Softadastra::Email> &email,
+         const std::shared_ptr<Softadastra::Phone> &phone,
+         const std::shared_ptr<Softadastra::Password> &password,
+         const std::shared_ptr<Softadastra::Company> &company = nullptr);
 
     ~User() = default;
     User(const User &other);
@@ -31,11 +30,10 @@ public:
 
 private:
     std::string m_full_name{};
-    std::shared_ptr<Softadastra::Company> m_company{};
     std::shared_ptr<Softadastra::Email> m_email{};
     std::shared_ptr<Softadastra::Phone> m_phone{};
-    std::shared_ptr<Softadastra::Password> m_password{}; // Avant m_location
-    std::shared_ptr<Softadastra::Location> m_location{}; // Après m_password
+    std::shared_ptr<Softadastra::Password> m_password{};
+    std::shared_ptr<Softadastra::Company> m_company{};
 };
 
 #endif // USER_HPP

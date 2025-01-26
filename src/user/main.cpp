@@ -8,23 +8,12 @@ int main()
 {
     try
     {
-        // Création des objets validés pour un utilisateur complet
-        auto emailComplete = std::make_shared<Email>("john.doe@example.com");
-        auto phoneComplete = std::make_shared<Phone>("1234567890");
-        auto companyComplete = std::make_shared<Company>("Tech corps");
-        auto locationComplete = std::make_shared<Location>(1, 2, 3);
-        auto password = std::make_shared<Password>("gaspard");
+        auto email = std::make_shared<Email>("gaspard@gmail.com");
+        auto phone = std::make_shared<Phone>("256783345232");
+        auto password = std::make_shared<Password>("1234");
+        auto company = std::make_shared<Company>("Tech corp");
 
-        // Création d'un utilisateur COMPLET avec toutes les informations
-        User userComplete("John Doe", companyComplete, emailComplete, phoneComplete, password, locationComplete);
-
-        std::cout << "--- User Complete ---" << std::endl;
-        userComplete.displayInfo();
-
-        std::cout << "\n--- Creating User without Company and Location ---" << std::endl;
-
-        // Création d'un utilisateur INCOMPLET sans spécifier de Company et Location
-        User userIncomplete("Jane Doe", nullptr, emailComplete, phoneComplete);
+        User userIncomplete("Gaspard", email, phone, password, company);
 
         userIncomplete.displayInfo();
     }
