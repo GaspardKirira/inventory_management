@@ -26,6 +26,7 @@ public:
     User(User &&other) noexcept;
     User &operator=(User &&other) noexcept;
     const std::string &getFullName() const { return m_full_name; }
+    void warning(const std::string &message) const;
     void displayInfo() const;
 
 private:

@@ -4,7 +4,7 @@
 
 using namespace Softadastra;
 
-int main3()
+int main()
 {
     try
     {

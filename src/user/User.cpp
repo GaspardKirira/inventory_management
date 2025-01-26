@@ -1,4 +1,5 @@
 #include "User.hpp"
+#include <spdlog/spdlog.h>
 
 using namespace Softadastra;
 
@@ -61,54 +62,61 @@ User &User::operator=(User &&other) noexcept
     return *this;
 }
 
+void User::warning(const std::string &message) const
+{
+    spdlog::warn("{} : Not provided", message);
+}
+
 void User::displayInfo() const
 {
-    std::cout << "Full Name: " << m_full_name << std::endl;
+    spdlog::info("FULLNAME: {}", m_full_name);
 
     if (m_company)
     {
-        std::cout << "Company: " << m_company->getCompanyName() << std::endl;
+        spdlog::info("COMPANY: {}", m_company->getCompanyName());
     }
     else
     {
-        std::cout << "Company: Not provided" << std::endl;
+        warning("COMPANY");
     }
 
     if (m_email)
     {
-        std::cout << "Email: " << m_email->getEmail() << std::endl;
+        spdlog::info("EMAIL: {}", m_email->getEmail());
     }
     else
     {
-        std::cout << "Email: Not provided" << std::endl;
+        warning("EMAIL");
     }
 
     if (m_phone)
     {
         std::cout << "Phone: " << m_phone->getPhone() << std::endl;
+        spdlog::info("PHONE: {}", m_phone->getPhone());
     }
     else
     {
-        std::cout << "Phone: Not provided" << std::endl;
+        warning("PHONE");
     }
 
     if (m_location)
     {
-        std::cout << "Location - Country ID: " << m_location->getCountryId()
-                  << ", Currency ID: " << m_location->getCurrencyId()
-                  << ", Language ID: " << m_location->getLanguageId() << std::endl;
+        spdlog::info("Location");
+        spdlog::info("Country ID: {}", m_location->getCountryId());
+        spdlog::info("Currency ID: {}", m_location->getCurrencyId());
+        spdlog::info("Language ID: {}", m_location->getLanguageId());
     }
     else
     {
-        std::cout << "Location: Not provided" << std::endl;
+        warning("LOCATION");
     }
 
     if (m_password)
     {
-        std::cout << "Password: " << m_password->getPasswordHash() << std::endl;
+        spdlog::info("PASSWORD: {}", m_password->getPasswordHash());
     }
     else
     {
-        std::cout << "Password: Not provided" << std::endl;
+        warning("PASSWORD");
     }
 }
