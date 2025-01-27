@@ -4870,6 +4870,7 @@ CMakeFiles/prog.dir/src/kernel/RouteConfigurator.cpp.o: /home/softadastra/Docume
   /home/softadastra/Documents/cpp/softadastra/src/kernel/DynamicRequestHandler.hpp \
   /home/softadastra/Documents/cpp/softadastra/src/kernel/HomeRoutes.hpp \
   /home/softadastra/Documents/cpp/softadastra/src/kernel/IRequestHandler.hpp \
+  /home/softadastra/Documents/cpp/softadastra/src/kernel/IRoutes.hpp \
   /home/softadastra/Documents/cpp/softadastra/src/kernel/ProductRoutes.hpp \
   /home/softadastra/Documents/cpp/softadastra/src/kernel/RouteConfigurator.hpp \
   /home/softadastra/Documents/cpp/softadastra/src/kernel/Router.hpp \
@@ -13052,6 +13053,8 @@ CMakeFiles/prog.dir/src/main.cpp.o: /home/softadastra/Documents/cpp/softadastra/
 /home/softadastra/Documents/cpp/softadastra/src/kernel/SimpleRequestHandler.cpp:
 
 /home/softadastra/Documents/cpp/softadastra/src/kernel/ProductRoutes.hpp:
+
+/home/softadastra/Documents/cpp/softadastra/src/kernel/IRoutes.hpp:
 
 /home/softadastra/Documents/cpp/softadastra/src/kernel/HomeRoutes.hpp:
 

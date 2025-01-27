@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/softadastra/Documents/cpp/softadastra/src/entities/tests
+CMAKE_SOURCE_DIR = /home/softadastra/Documents/cpp/softadastra/src/user/tests
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/softadastra/Documents/cpp/softadastra/src/entities/tests/build
+CMAKE_BINARY_DIR = /home/softadastra/Documents/cpp/softadastra/src/user/tests/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/softadastra/Documents/cpp/softadastra/src/entities/tests/build/CMakeFiles /home/softadastra/Documents/cpp/softadastra/src/entities/tests/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/softadastra/Documents/cpp/softadastra/src/user/tests/build/CMakeFiles /home/softadastra/Documents/cpp/softadastra/src/user/tests/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/softadastra/Documents/cpp/softadastra/src/entities/tests/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/softadastra/Documents/cpp/softadastra/src/user/tests/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -129,29 +129,29 @@ prog/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/prog.dir/build.make CMakeFiles/prog.dir/build
 .PHONY : prog/fast
 
-test_main.o: test_main.cpp.o
-.PHONY : test_main.o
+test_password.o: test_password.cpp.o
+.PHONY : test_password.o
 
 # target to build an object file
-test_main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/prog.dir/build.make CMakeFiles/prog.dir/test_main.cpp.o
-.PHONY : test_main.cpp.o
+test_password.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/prog.dir/build.make CMakeFiles/prog.dir/test_password.cpp.o
+.PHONY : test_password.cpp.o
 
-test_main.i: test_main.cpp.i
-.PHONY : test_main.i
+test_password.i: test_password.cpp.i
+.PHONY : test_password.i
 
 # target to preprocess a source file
-test_main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/prog.dir/build.make CMakeFiles/prog.dir/test_main.cpp.i
-.PHONY : test_main.cpp.i
+test_password.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/prog.dir/build.make CMakeFiles/prog.dir/test_password.cpp.i
+.PHONY : test_password.cpp.i
 
-test_main.s: test_main.cpp.s
-.PHONY : test_main.s
+test_password.s: test_password.cpp.s
+.PHONY : test_password.s
 
 # target to generate assembly for a file
-test_main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/prog.dir/build.make CMakeFiles/prog.dir/test_main.cpp.s
-.PHONY : test_main.cpp.s
+test_password.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/prog.dir/build.make CMakeFiles/prog.dir/test_password.cpp.s
+.PHONY : test_password.cpp.s
 
 # Help Target
 help:
@@ -162,9 +162,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... prog"
-	@echo "... test_main.o"
-	@echo "... test_main.i"
-	@echo "... test_main.s"
+	@echo "... test_password.o"
+	@echo "... test_password.i"
+	@echo "... test_password.s"
 .PHONY : help
 
 

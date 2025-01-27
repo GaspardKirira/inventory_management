@@ -14,8 +14,21 @@ namespace Softadastra
 
         // Constructeur avec le mot de passe
         explicit Password(const std::string &password)
-            : m_password_hash(Softadastra::PasswordValidator::hashPassword(password))
         {
+            // Vérification de la complexité du mot de passe
+            if (!Softadastra::PasswordValidator::validatePasswordComplexity(password))
+            {
+                throw std::invalid_argument("Le mot de passe ne respecte pas les exigences de complexité. "
+                                            "Le mot de passe doit :\n"
+                                            "- Avoir au moins 12 caractères\n"
+                                            "- Contenir au moins une lettre majuscule\n"
+                                            "- Contenir au moins une lettre minuscule\n"
+                                            "- Contenir au moins un chiffre\n"
+                                            "- Contenir au moins un caractère spécial (exemple : !, @, #, $, %, etc.)");
+            }
+
+            // Si la complexité est valide, hachage du mot de passe
+            m_password_hash = Softadastra::PasswordValidator::hashPassword(password);
         }
 
         // Getter pour le hash du mot de passe

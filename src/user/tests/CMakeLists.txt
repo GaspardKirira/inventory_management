@@ -13,14 +13,28 @@ find_package(benchmark REQUIRED)
 # Si find_package échoue, spécifie manuellement le répertoire d'inclusion et de bibliothèque
 include_directories(${GTEST_INCLUDE_DIRS} ${BENCHMARK_INCLUDE_DIRS})
 
+# Ajouter le répertoire contenant les en-têtes de bcrypt
+include_directories(${CMAKE_SOURCE_DIR}/bcrypt)
+
+# Ajouter le répertoire contenant la bibliothèque statique libbcrypt.a
+link_directories(${CMAKE_SOURCE_DIR}/bcrypt)
+
 # Ajoute un chemin explicite pour les bibliothèques de Google Benchmark
 link_directories(/usr/local/lib)
 
-# Ajoute l'exécutable à générer
-add_executable(prog test_main.cpp)
 
-# Lier explicitement les bibliothèques de Google Test et Google Benchmark
-target_link_libraries(prog ${GTEST_LIBRARIES} /usr/local/lib/libbenchmark.a /usr/local/lib/libbenchmark_main.a pthread)
+# Ajoute l'exécutable à générer
+add_executable(prog test_password.cpp)
+
+# Ajouter les bibliothèques nécessaires
+target_link_libraries(prog 
+    /usr/local/lib/libgtest.a 
+    /usr/local/lib/libgtest_main.a 
+    pthread 
+    bcrypt 
+    ssl 
+    crypto
+)
 
 # Ajouter des flags de compilation
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra -Weffc++ -g -fsanitize=address")

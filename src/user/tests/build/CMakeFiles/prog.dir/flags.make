@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/home/softadastra/Documents/cpp/softadastra/src/user/tests/bcrypt
 
 CXX_FLAGS =  -Wall -Wextra -Weffc++ -g -fsanitize=address -std=gnu++20
 

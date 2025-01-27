@@ -14,61 +14,56 @@ namespace Softadastra
     class PasswordValidator
     {
     public:
-        // Méthode pour hacher le mot de passe avec SHA-256
+        // Méthode pour hacher le mot de passe avec bcrypt (plutôt que SHA-256)
         static std::string hashPassword(const std::string &password)
         {
-            unsigned char hash[EVP_MAX_MD_SIZE];
-            unsigned int length = 0;
-
-            // Créer un contexte EVP pour SHA-256
-            EVP_MD_CTX *ctx = EVP_MD_CTX_new();
-            if (ctx == nullptr)
+            // Générer un "salt" aléatoire
+            char salt[BCRYPT_HASHSIZE];
+            if (bcrypt_gensalt(12, salt) != 0) // 12 est la force du hachage
             {
-                throw std::runtime_error("Erreur d'allocation du contexte EVP.");
+                throw std::runtime_error("Erreur lors de la génération du salt.");
             }
 
-            // Initialiser le contexte pour SHA-256
-            if (EVP_DigestInit_ex(ctx, EVP_sha256(), nullptr) != 1)
+            // Hacher le mot de passe avec bcrypt
+            char hashed_password[BCRYPT_HASHSIZE];
+            if (bcrypt_hashpw(password.c_str(), salt, hashed_password) != 0)
             {
-                EVP_MD_CTX_free(ctx);
-                throw std::runtime_error("Erreur lors de l'initialisation de SHA-256.");
+                throw std::runtime_error("Erreur lors du hachage du mot de passe.");
             }
 
-            // Mettre à jour le contexte avec le mot de passe
-            if (EVP_DigestUpdate(ctx, password.c_str(), password.length()) != 1)
-            {
-                EVP_MD_CTX_free(ctx);
-                throw std::runtime_error("Erreur lors de la mise à jour de SHA-256.");
-            }
-
-            // Finaliser le calcul du hash
-            if (EVP_DigestFinal_ex(ctx, hash, &length) != 1)
-            {
-                EVP_MD_CTX_free(ctx);
-                throw std::runtime_error("Erreur lors de la finalisation du hash SHA-256.");
-            }
-
-            // Convertir le hash en une chaîne hexadécimale
-            std::stringstream ss;
-            for (unsigned int i = 0; i < length; i++)
-            {
-                ss << std::setw(2) << std::setfill('0') << std::hex << (int)hash[i];
-            }
-
-            EVP_MD_CTX_free(ctx);
-            return ss.str();
+            return std::string(hashed_password);
         }
 
-        // Méthode pour vérifier si le mot de passe est valide
+        // Méthode pour vérifier si le mot de passe est valide avec bcrypt
         static void validatePassword(const std::string &password, const std::string &stored_hash)
         {
-            // Si la comparaison réussit (bcrypt_checkpw retourne 0)
+            // Si la comparaison échoue, lever une exception
             if (bcrypt_checkpw(password.c_str(), stored_hash.c_str()) != 0)
             {
-                // Si la comparaison échoue, lancer une exception avec un message plus explicite
                 throw std::invalid_argument("Mot de passe invalide.");
             }
-            // Sinon, rien n'est à faire, le mot de passe est valide.
+        }
+
+        // Méthode pour valider la complexité d'un mot de passe
+        static bool validatePasswordComplexity(const std::string &password)
+        {
+            if (password.length() < 12)
+                return false;
+
+            bool has_upper = false, has_lower = false, has_digit = false, has_special = false;
+            for (char ch : password)
+            {
+                if (isupper(ch))
+                    has_upper = true;
+                if (islower(ch))
+                    has_lower = true;
+                if (isdigit(ch))
+                    has_digit = true;
+                if (ispunct(ch))
+                    has_special = true;
+            }
+
+            return has_upper && has_lower && has_digit && has_special;
         }
     };
 } // namespace Softadastra

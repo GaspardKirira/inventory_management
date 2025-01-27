@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/softadastra/Documents/cpp/softadastra/src/entities/tests/test_main.cpp" "CMakeFiles/prog.dir/test_main.cpp.o" "gcc" "CMakeFiles/prog.dir/test_main.cpp.o.d"
+  "/home/softadastra/Documents/cpp/softadastra/src/user/tests/test_password.cpp" "CMakeFiles/prog.dir/test_password.cpp.o" "gcc" "CMakeFiles/prog.dir/test_password.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
