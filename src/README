@@ -1,6 +1,0 @@
-SELECT u.nom_complet, u.email, p.nom_pays, d.nom_devise, l.nom_langue
-FROM utilisateurs u
-JOIN pays p ON u.id_pays = p.id_pays
-JOIN devise d ON u.id_devise = d.id_devise
-JOIN langue l ON u.id_langue = l.id_langue
-WHERE u.id_utilisateur = 1;
