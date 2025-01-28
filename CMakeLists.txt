@@ -48,13 +48,13 @@ include_directories(${OPENSSL_INCLUDE_DIR})
 include_directories(${CMAKE_SOURCE_DIR}/src/config)
 
 # Find all .cpp files in src and src/config
-file(GLOB_RECURSE SOURCE_FILES src/*.cpp src/config/*.cpp src/config/Config.cpp)
+file(GLOB_RECURSE SOURCE_FILES src/*.cpp src/config/*.cpp)
 
 # Add the executable target
-add_executable(prog src/main.cpp ${SOURCE_FILES})
+add_executable(main src/start.cpp ${SOURCE_FILES})
 
 # Link libraries
-target_link_libraries(prog 
+target_link_libraries(main 
     PRIVATE
     /usr/local/lib/libgtest.a
     /usr/local/lib/libgtest_main.a

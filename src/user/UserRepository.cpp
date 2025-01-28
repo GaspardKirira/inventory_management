@@ -15,12 +15,10 @@ namespace Softadastra
         pstmt->setString(5, user.getCompany()->getCompanyName());
 
         pstmt->executeUpdate();
-
-        spdlog::info("Utilisateur {} enregistré avec succès dans la base de données.", user.getFullName());
     }
 
     UserRepository::~UserRepository()
     {
-        spdlog::warn("UserRepository Destroyed !");
+        spdlog::warn("UserRepository Destroyed bien!");
     }
 } // namespace Softadastra

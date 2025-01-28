@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named prog
+# Target rules for targets named main
 
 # Build rule for target.
-prog: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 prog
-.PHONY : prog
+main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
+.PHONY : main
 
 # fast build rule for target.
-prog/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/prog.dir/build.make CMakeFiles/prog.dir/build
-.PHONY : prog/fast
+main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+.PHONY : main/fast
 
 src/config/Config.o: src/config/Config.cpp.o
 .PHONY : src/config/Config.o
 
 # target to build an object file
 src/config/Config.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/prog.dir/build.make CMakeFiles/prog.dir/src/config/Config.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/config/Config.cpp.o
 .PHONY : src/config/Config.cpp.o
 
 src/config/Config.i: src/config/Config.cpp.i
@@ -142,7 +142,7 @@ src/config/Config.i: src/config/Config.cpp.i
 
 # target to preprocess a source file
 src/config/Config.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/prog.dir/build.make CMakeFiles/prog.dir/src/config/Config.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/config/Config.cpp.i
 .PHONY : src/config/Config.cpp.i
 
 src/config/Config.s: src/config/Config.cpp.s
@@ -150,39 +150,207 @@ src/config/Config.s: src/config/Config.cpp.s
 
 # target to generate assembly for a file
 src/config/Config.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/prog.dir/build.make CMakeFiles/prog.dir/src/config/Config.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/config/Config.cpp.s
 .PHONY : src/config/Config.cpp.s
 
-src/main.o: src/main.cpp.o
-.PHONY : src/main.o
+src/config/RouteConfigurator.o: src/config/RouteConfigurator.cpp.o
+.PHONY : src/config/RouteConfigurator.o
 
 # target to build an object file
-src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/prog.dir/build.make CMakeFiles/prog.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
+src/config/RouteConfigurator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/config/RouteConfigurator.cpp.o
+.PHONY : src/config/RouteConfigurator.cpp.o
 
-src/main.i: src/main.cpp.i
-.PHONY : src/main.i
+src/config/RouteConfigurator.i: src/config/RouteConfigurator.cpp.i
+.PHONY : src/config/RouteConfigurator.i
 
 # target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/prog.dir/build.make CMakeFiles/prog.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
+src/config/RouteConfigurator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/config/RouteConfigurator.cpp.i
+.PHONY : src/config/RouteConfigurator.cpp.i
 
-src/main.s: src/main.cpp.s
-.PHONY : src/main.s
+src/config/RouteConfigurator.s: src/config/RouteConfigurator.cpp.s
+.PHONY : src/config/RouteConfigurator.s
 
 # target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/prog.dir/build.make CMakeFiles/prog.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
+src/config/RouteConfigurator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/config/RouteConfigurator.cpp.s
+.PHONY : src/config/RouteConfigurator.cpp.s
+
+src/kernel/DynamicRequestHandler.o: src/kernel/DynamicRequestHandler.cpp.o
+.PHONY : src/kernel/DynamicRequestHandler.o
+
+# target to build an object file
+src/kernel/DynamicRequestHandler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/kernel/DynamicRequestHandler.cpp.o
+.PHONY : src/kernel/DynamicRequestHandler.cpp.o
+
+src/kernel/DynamicRequestHandler.i: src/kernel/DynamicRequestHandler.cpp.i
+.PHONY : src/kernel/DynamicRequestHandler.i
+
+# target to preprocess a source file
+src/kernel/DynamicRequestHandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/kernel/DynamicRequestHandler.cpp.i
+.PHONY : src/kernel/DynamicRequestHandler.cpp.i
+
+src/kernel/DynamicRequestHandler.s: src/kernel/DynamicRequestHandler.cpp.s
+.PHONY : src/kernel/DynamicRequestHandler.s
+
+# target to generate assembly for a file
+src/kernel/DynamicRequestHandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/kernel/DynamicRequestHandler.cpp.s
+.PHONY : src/kernel/DynamicRequestHandler.cpp.s
+
+src/kernel/HTTPServer.o: src/kernel/HTTPServer.cpp.o
+.PHONY : src/kernel/HTTPServer.o
+
+# target to build an object file
+src/kernel/HTTPServer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/kernel/HTTPServer.cpp.o
+.PHONY : src/kernel/HTTPServer.cpp.o
+
+src/kernel/HTTPServer.i: src/kernel/HTTPServer.cpp.i
+.PHONY : src/kernel/HTTPServer.i
+
+# target to preprocess a source file
+src/kernel/HTTPServer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/kernel/HTTPServer.cpp.i
+.PHONY : src/kernel/HTTPServer.cpp.i
+
+src/kernel/HTTPServer.s: src/kernel/HTTPServer.cpp.s
+.PHONY : src/kernel/HTTPServer.s
+
+# target to generate assembly for a file
+src/kernel/HTTPServer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/kernel/HTTPServer.cpp.s
+.PHONY : src/kernel/HTTPServer.cpp.s
+
+src/kernel/Response.o: src/kernel/Response.cpp.o
+.PHONY : src/kernel/Response.o
+
+# target to build an object file
+src/kernel/Response.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/kernel/Response.cpp.o
+.PHONY : src/kernel/Response.cpp.o
+
+src/kernel/Response.i: src/kernel/Response.cpp.i
+.PHONY : src/kernel/Response.i
+
+# target to preprocess a source file
+src/kernel/Response.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/kernel/Response.cpp.i
+.PHONY : src/kernel/Response.cpp.i
+
+src/kernel/Response.s: src/kernel/Response.cpp.s
+.PHONY : src/kernel/Response.s
+
+# target to generate assembly for a file
+src/kernel/Response.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/kernel/Response.cpp.s
+.PHONY : src/kernel/Response.cpp.s
+
+src/kernel/Router.o: src/kernel/Router.cpp.o
+.PHONY : src/kernel/Router.o
+
+# target to build an object file
+src/kernel/Router.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/kernel/Router.cpp.o
+.PHONY : src/kernel/Router.cpp.o
+
+src/kernel/Router.i: src/kernel/Router.cpp.i
+.PHONY : src/kernel/Router.i
+
+# target to preprocess a source file
+src/kernel/Router.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/kernel/Router.cpp.i
+.PHONY : src/kernel/Router.cpp.i
+
+src/kernel/Router.s: src/kernel/Router.cpp.s
+.PHONY : src/kernel/Router.s
+
+# target to generate assembly for a file
+src/kernel/Router.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/kernel/Router.cpp.s
+.PHONY : src/kernel/Router.cpp.s
+
+src/kernel/Session.o: src/kernel/Session.cpp.o
+.PHONY : src/kernel/Session.o
+
+# target to build an object file
+src/kernel/Session.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/kernel/Session.cpp.o
+.PHONY : src/kernel/Session.cpp.o
+
+src/kernel/Session.i: src/kernel/Session.cpp.i
+.PHONY : src/kernel/Session.i
+
+# target to preprocess a source file
+src/kernel/Session.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/kernel/Session.cpp.i
+.PHONY : src/kernel/Session.cpp.i
+
+src/kernel/Session.s: src/kernel/Session.cpp.s
+.PHONY : src/kernel/Session.s
+
+# target to generate assembly for a file
+src/kernel/Session.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/kernel/Session.cpp.s
+.PHONY : src/kernel/Session.cpp.s
+
+src/kernel/SimpleRequestHandler.o: src/kernel/SimpleRequestHandler.cpp.o
+.PHONY : src/kernel/SimpleRequestHandler.o
+
+# target to build an object file
+src/kernel/SimpleRequestHandler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/kernel/SimpleRequestHandler.cpp.o
+.PHONY : src/kernel/SimpleRequestHandler.cpp.o
+
+src/kernel/SimpleRequestHandler.i: src/kernel/SimpleRequestHandler.cpp.i
+.PHONY : src/kernel/SimpleRequestHandler.i
+
+# target to preprocess a source file
+src/kernel/SimpleRequestHandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/kernel/SimpleRequestHandler.cpp.i
+.PHONY : src/kernel/SimpleRequestHandler.cpp.i
+
+src/kernel/SimpleRequestHandler.s: src/kernel/SimpleRequestHandler.cpp.s
+.PHONY : src/kernel/SimpleRequestHandler.s
+
+# target to generate assembly for a file
+src/kernel/SimpleRequestHandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/kernel/SimpleRequestHandler.cpp.s
+.PHONY : src/kernel/SimpleRequestHandler.cpp.s
+
+src/start.o: src/start.cpp.o
+.PHONY : src/start.o
+
+# target to build an object file
+src/start.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/start.cpp.o
+.PHONY : src/start.cpp.o
+
+src/start.i: src/start.cpp.i
+.PHONY : src/start.i
+
+# target to preprocess a source file
+src/start.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/start.cpp.i
+.PHONY : src/start.cpp.i
+
+src/start.s: src/start.cpp.s
+.PHONY : src/start.s
+
+# target to generate assembly for a file
+src/start.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/start.cpp.s
+.PHONY : src/start.cpp.s
 
 src/user/User.o: src/user/User.cpp.o
 .PHONY : src/user/User.o
 
 # target to build an object file
 src/user/User.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/prog.dir/build.make CMakeFiles/prog.dir/src/user/User.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/user/User.cpp.o
 .PHONY : src/user/User.cpp.o
 
 src/user/User.i: src/user/User.cpp.i
@@ -190,7 +358,7 @@ src/user/User.i: src/user/User.cpp.i
 
 # target to preprocess a source file
 src/user/User.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/prog.dir/build.make CMakeFiles/prog.dir/src/user/User.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/user/User.cpp.i
 .PHONY : src/user/User.cpp.i
 
 src/user/User.s: src/user/User.cpp.s
@@ -198,7 +366,7 @@ src/user/User.s: src/user/User.cpp.s
 
 # target to generate assembly for a file
 src/user/User.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/prog.dir/build.make CMakeFiles/prog.dir/src/user/User.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/user/User.cpp.s
 .PHONY : src/user/User.cpp.s
 
 src/user/UserRepository.o: src/user/UserRepository.cpp.o
@@ -206,7 +374,7 @@ src/user/UserRepository.o: src/user/UserRepository.cpp.o
 
 # target to build an object file
 src/user/UserRepository.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/prog.dir/build.make CMakeFiles/prog.dir/src/user/UserRepository.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/user/UserRepository.cpp.o
 .PHONY : src/user/UserRepository.cpp.o
 
 src/user/UserRepository.i: src/user/UserRepository.cpp.i
@@ -214,7 +382,7 @@ src/user/UserRepository.i: src/user/UserRepository.cpp.i
 
 # target to preprocess a source file
 src/user/UserRepository.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/prog.dir/build.make CMakeFiles/prog.dir/src/user/UserRepository.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/user/UserRepository.cpp.i
 .PHONY : src/user/UserRepository.cpp.i
 
 src/user/UserRepository.s: src/user/UserRepository.cpp.s
@@ -222,7 +390,7 @@ src/user/UserRepository.s: src/user/UserRepository.cpp.s
 
 # target to generate assembly for a file
 src/user/UserRepository.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/prog.dir/build.make CMakeFiles/prog.dir/src/user/UserRepository.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/user/UserRepository.cpp.s
 .PHONY : src/user/UserRepository.cpp.s
 
 # Help Target
@@ -233,13 +401,34 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... prog"
+	@echo "... main"
 	@echo "... src/config/Config.o"
 	@echo "... src/config/Config.i"
 	@echo "... src/config/Config.s"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
+	@echo "... src/config/RouteConfigurator.o"
+	@echo "... src/config/RouteConfigurator.i"
+	@echo "... src/config/RouteConfigurator.s"
+	@echo "... src/kernel/DynamicRequestHandler.o"
+	@echo "... src/kernel/DynamicRequestHandler.i"
+	@echo "... src/kernel/DynamicRequestHandler.s"
+	@echo "... src/kernel/HTTPServer.o"
+	@echo "... src/kernel/HTTPServer.i"
+	@echo "... src/kernel/HTTPServer.s"
+	@echo "... src/kernel/Response.o"
+	@echo "... src/kernel/Response.i"
+	@echo "... src/kernel/Response.s"
+	@echo "... src/kernel/Router.o"
+	@echo "... src/kernel/Router.i"
+	@echo "... src/kernel/Router.s"
+	@echo "... src/kernel/Session.o"
+	@echo "... src/kernel/Session.i"
+	@echo "... src/kernel/Session.s"
+	@echo "... src/kernel/SimpleRequestHandler.o"
+	@echo "... src/kernel/SimpleRequestHandler.i"
+	@echo "... src/kernel/SimpleRequestHandler.s"
+	@echo "... src/start.o"
+	@echo "... src/start.i"
+	@echo "... src/start.s"
 	@echo "... src/user/User.o"
 	@echo "... src/user/User.i"
 	@echo "... src/user/User.s"
