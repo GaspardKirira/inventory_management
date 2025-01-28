@@ -83,10 +83,24 @@ CMakeFiles/prog.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/prog.dir/src/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/softadastra/Documents/cpp/softadastra/src/main.cpp -o CMakeFiles/prog.dir/src/main.cpp.s
 
+CMakeFiles/prog.dir/src/config/Config.cpp.o: CMakeFiles/prog.dir/flags.make
+CMakeFiles/prog.dir/src/config/Config.cpp.o: /home/softadastra/Documents/cpp/softadastra/src/config/Config.cpp
+CMakeFiles/prog.dir/src/config/Config.cpp.o: CMakeFiles/prog.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/softadastra/Documents/cpp/softadastra/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/prog.dir/src/config/Config.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/prog.dir/src/config/Config.cpp.o -MF CMakeFiles/prog.dir/src/config/Config.cpp.o.d -o CMakeFiles/prog.dir/src/config/Config.cpp.o -c /home/softadastra/Documents/cpp/softadastra/src/config/Config.cpp
+
+CMakeFiles/prog.dir/src/config/Config.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/prog.dir/src/config/Config.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/softadastra/Documents/cpp/softadastra/src/config/Config.cpp > CMakeFiles/prog.dir/src/config/Config.cpp.i
+
+CMakeFiles/prog.dir/src/config/Config.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/prog.dir/src/config/Config.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/softadastra/Documents/cpp/softadastra/src/config/Config.cpp -o CMakeFiles/prog.dir/src/config/Config.cpp.s
+
 CMakeFiles/prog.dir/src/user/User.cpp.o: CMakeFiles/prog.dir/flags.make
 CMakeFiles/prog.dir/src/user/User.cpp.o: /home/softadastra/Documents/cpp/softadastra/src/user/User.cpp
 CMakeFiles/prog.dir/src/user/User.cpp.o: CMakeFiles/prog.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/softadastra/Documents/cpp/softadastra/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/prog.dir/src/user/User.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/softadastra/Documents/cpp/softadastra/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/prog.dir/src/user/User.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/prog.dir/src/user/User.cpp.o -MF CMakeFiles/prog.dir/src/user/User.cpp.o.d -o CMakeFiles/prog.dir/src/user/User.cpp.o -c /home/softadastra/Documents/cpp/softadastra/src/user/User.cpp
 
 CMakeFiles/prog.dir/src/user/User.cpp.i: cmake_force
@@ -100,7 +114,7 @@ CMakeFiles/prog.dir/src/user/User.cpp.s: cmake_force
 CMakeFiles/prog.dir/src/user/UserRepository.cpp.o: CMakeFiles/prog.dir/flags.make
 CMakeFiles/prog.dir/src/user/UserRepository.cpp.o: /home/softadastra/Documents/cpp/softadastra/src/user/UserRepository.cpp
 CMakeFiles/prog.dir/src/user/UserRepository.cpp.o: CMakeFiles/prog.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/softadastra/Documents/cpp/softadastra/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/prog.dir/src/user/UserRepository.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/softadastra/Documents/cpp/softadastra/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/prog.dir/src/user/UserRepository.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/prog.dir/src/user/UserRepository.cpp.o -MF CMakeFiles/prog.dir/src/user/UserRepository.cpp.o.d -o CMakeFiles/prog.dir/src/user/UserRepository.cpp.o -c /home/softadastra/Documents/cpp/softadastra/src/user/UserRepository.cpp
 
 CMakeFiles/prog.dir/src/user/UserRepository.cpp.i: cmake_force
@@ -114,6 +128,7 @@ CMakeFiles/prog.dir/src/user/UserRepository.cpp.s: cmake_force
 # Object files for target prog
 prog_OBJECTS = \
 "CMakeFiles/prog.dir/src/main.cpp.o" \
+"CMakeFiles/prog.dir/src/config/Config.cpp.o" \
 "CMakeFiles/prog.dir/src/user/User.cpp.o" \
 "CMakeFiles/prog.dir/src/user/UserRepository.cpp.o"
 
@@ -121,6 +136,7 @@ prog_OBJECTS = \
 prog_EXTERNAL_OBJECTS =
 
 prog: CMakeFiles/prog.dir/src/main.cpp.o
+prog: CMakeFiles/prog.dir/src/config/Config.cpp.o
 prog: CMakeFiles/prog.dir/src/user/User.cpp.o
 prog: CMakeFiles/prog.dir/src/user/UserRepository.cpp.o
 prog: CMakeFiles/prog.dir/build.make
@@ -129,7 +145,7 @@ prog: /usr/local/lib/libgtest_main.a
 prog: /usr/lib/x86_64-linux-gnu/libssl.so
 prog: /usr/lib/x86_64-linux-gnu/libcrypto.so
 prog: CMakeFiles/prog.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/softadastra/Documents/cpp/softadastra/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable prog"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/softadastra/Documents/cpp/softadastra/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable prog"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/prog.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

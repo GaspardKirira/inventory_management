@@ -129,6 +129,30 @@ prog/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/prog.dir/build.make CMakeFiles/prog.dir/build
 .PHONY : prog/fast
 
+src/config/Config.o: src/config/Config.cpp.o
+.PHONY : src/config/Config.o
+
+# target to build an object file
+src/config/Config.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/prog.dir/build.make CMakeFiles/prog.dir/src/config/Config.cpp.o
+.PHONY : src/config/Config.cpp.o
+
+src/config/Config.i: src/config/Config.cpp.i
+.PHONY : src/config/Config.i
+
+# target to preprocess a source file
+src/config/Config.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/prog.dir/build.make CMakeFiles/prog.dir/src/config/Config.cpp.i
+.PHONY : src/config/Config.cpp.i
+
+src/config/Config.s: src/config/Config.cpp.s
+.PHONY : src/config/Config.s
+
+# target to generate assembly for a file
+src/config/Config.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/prog.dir/build.make CMakeFiles/prog.dir/src/config/Config.cpp.s
+.PHONY : src/config/Config.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -210,6 +234,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... prog"
+	@echo "... src/config/Config.o"
+	@echo "... src/config/Config.i"
+	@echo "... src/config/Config.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

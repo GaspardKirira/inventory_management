@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/softadastra/Documents/cpp/softadastra/src/config/Config.cpp" "CMakeFiles/prog.dir/src/config/Config.cpp.o" "gcc" "CMakeFiles/prog.dir/src/config/Config.cpp.o.d"
   "/home/softadastra/Documents/cpp/softadastra/src/main.cpp" "CMakeFiles/prog.dir/src/main.cpp.o" "gcc" "CMakeFiles/prog.dir/src/main.cpp.o.d"
   "/home/softadastra/Documents/cpp/softadastra/src/user/User.cpp" "CMakeFiles/prog.dir/src/user/User.cpp.o" "gcc" "CMakeFiles/prog.dir/src/user/User.cpp.o.d"
   "/home/softadastra/Documents/cpp/softadastra/src/user/UserRepository.cpp" "CMakeFiles/prog.dir/src/user/UserRepository.cpp.o" "gcc" "CMakeFiles/prog.dir/src/user/UserRepository.cpp.o.d"
