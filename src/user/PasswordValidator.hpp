@@ -47,7 +47,7 @@ namespace Softadastra
         // Méthode pour valider la complexité d'un mot de passe
         static bool validatePasswordComplexity(const std::string &password)
         {
-            if (password.length() < 12)
+            if (password.length() > 8)
                 return false;
 
             bool has_upper = false, has_lower = false, has_digit = false, has_special = false;

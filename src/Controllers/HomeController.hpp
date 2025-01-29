@@ -61,7 +61,7 @@ namespace Softadastra
             // Gestion de la méthode OPTIONS avant la méthode POST
             routes.add_route(http::verb::options, "/create",
                              std::static_pointer_cast<IRequestHandler>(std::make_shared<SimpleRequestHandler>(
-                                 [](const http::request<http::string_body> &req, http::response<http::string_body> &res)
+                                 [](const http::request<http::string_body> &, http::response<http::string_body> &res)
                                  {
                                      // Réponse vide avec les en-têtes CORS
                                      res.result(http::status::no_content);
