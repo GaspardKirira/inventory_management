@@ -17,6 +17,7 @@ namespace Softadastra
         }
 
         const std::string &getEmail() const { return m_email; }
+        void setEmail(const std::string &email) { m_email = email; }
 
     private:
         std::string m_email{};

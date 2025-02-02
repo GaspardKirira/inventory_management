@@ -33,6 +33,10 @@ namespace Softadastra
 
         // Getter pour le hash du mot de passe
         const std::string &getPasswordHash() const { return m_password_hash; }
+        void setPasswordHash(const std::string &password_hash)
+        {
+            m_password_hash = password_hash;
+        }
 
         // Méthode pour valider un mot de passe donné
         void validatePassword(const std::string &password) const

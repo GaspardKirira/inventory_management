@@ -2,6 +2,7 @@
 #include "../Controllers/ProductController.hpp"
 #include "../Controllers/UserController.hpp"
 #include "../Controllers/HomeController.hpp"
+#include "../user/UserRepository.hpp"
 
 namespace Softadastra
 {
@@ -12,13 +13,17 @@ namespace Softadastra
 
     void RouteConfigurator::configure_routes()
     {
+        Config &config = Config::getInstance();
+        config.loadConfig();
+
         HomeController homeController;
         homeController.configure(router_);
 
         ProductController productController;
         productController.configure(router_);
 
-        UserController userController;
+        UserRepository userRepository(config);
+        UserController userController(userRepository);
         userController.configure(router_);
     }
 }

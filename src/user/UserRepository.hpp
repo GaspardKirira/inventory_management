@@ -12,6 +12,10 @@ namespace Softadastra
     public:
         UserRepository(Config &config);
         void saveUser(const User &user) override;
+        std::vector<User> findAll();
+        std::shared_ptr<User> find(int userId);
+        void update(int userId, const User &user);
+        void deleteUser(int userId);
         ~UserRepository();
 
     private:
